@@ -1,0 +1,124 @@
+<html>
+<head>
+<link type="text/css" rel="stylesheet" href="style7.css">
+<script type="text/javascript">
+                function updateClock(){
+                    var date = new Date();
+                    var mins = date.getMinutes();
+                    var hrs = date.getHours();
+                    var ext = "AM";
+                    if(hrs > 12){ 
+                        var ext = "PM";
+                        var hrs = hrs - parseInt(12);
+                    }
+  				if(mins >=10)
+                    var currentTime = hrs + ":" + mins + " " + ext;
+					else
+					var currentTime = hrs + ":0" + mins + " " + ext; 
+					var x=document.getElementById("showClock");
+					x.innerHTML = currentTime;
+                }
+                window.setInterval(updateClock, 100);
+				updateClock();
+                
+
+</script>
+</head>
+<body>
+
+<div id="startbar">
+	<div id="win">
+
+		<div id="menu">
+			<div class="left-menu">
+				<ul>
+					<li><a href="#" class="arrow"><div class="fleft foldr"></div>WorkShops</a>
+						<div class="recent">
+							<hr />
+							<ul>
+								<li><a href="#">3D Animations</a></li>
+								<li><a href="#">Web Development</a></li>
+								<li><a href="#">Designing</a></li>
+								<li><a href="#">Auto-Cad</a></li>
+								<li><a href="#">DIP</a></li>
+								<li><a href="#">Robotics</a></li>
+								<li><a href="#">Flash</a></li>
+								<li><a href="#">Coding</a></li>
+							</ul>
+						</div>
+					</li>
+					<li><a href="#"><div class="fleft foldr"></div>About Us</a></li>
+					<li><a href="#"><div class="fleft foldr"></div>Schedule</a></li>
+					<li><a href="#"><div class="fleft op">O</div>Facebook Page</a></li>
+					<li><a href="#"><div class="fleft ie">e</div>Twitter</a></li>
+				</ul>
+				<form id="search" action="" name="prikitiw"><input type="text" placeholder="Search programs and files" /></form>
+			</div>
+
+			<div class="right-menu">
+				<ul>
+					<li><a href="#">DTU</a></li>
+					<li><a href="#">IEEE</a></li>
+					<li style="border-bottom:1px solid rgba(255,255,255,0.1);padding-top:5px;margin-bottom:2px;"><a href="#">IEEE-DTU</a></li>
+					<li ><a href="#">Computer</a></li>
+					<li><a href="#">Control Panel</a></li>
+				</ul>
+				<div class="shutdown">
+					<div class="lf">Log Out</div>
+				</div>
+
+				<div id="kontener">
+					<div class="admin"></div>
+				</div>
+
+			</div> <!-- rightmenu -->
+			<div class="clear"></div>
+		</div> <!-- menu -->
+
+		<div id="cont-win" title="Start">
+			<div class="w1"></div><div class="w2"></div>
+			<div class="clear"></div>
+			<div class="w3"></div><div class="w4"></div>
+			<div class="clear"></div>
+		</div>
+
+	</div> <!-- win -->
+
+	<div id="list">
+
+	<div class="opened tunggal"><div class="foldr small"></div>
+	<div class="screensht">
+		<div class="col1 fold">
+		<div class="close">&times;</div><div class="kotak"></div>
+		</div>
+	</div>
+	</div>
+
+	<div class="opened tunggal"><div class="foldr np small"></div>
+	<div class="screensht">
+		<div class="col1 ntpad">
+		<div class="close">&times;</div><div class="kotak"></div>
+		</div>
+	</div>
+	</div>
+
+	</div> 
+
+	<div id="fright">
+		<div class="plus">
+			<div class="screensht">
+				<div class="grup">
+					<b>&#169; TechWeek - 2013</b><br />
+					<a href="" target="_blank">WTF</a>
+				</div>
+			</div>
+
+		<div class="connection" title="Local Area Connection"></div>
+		<div class="speker" title=""></div>
+		<div class="jam" id="showClock"></div>
+		<div class="clear"></div>
+	</div>
+
+</div>
+</body>
+</html>
