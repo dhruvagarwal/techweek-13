@@ -1,0 +1,326 @@
+<html>
+<head>
+<link type="text/css" rel="stylesheet" href="style7.css">
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3/jquery.min.js"></script>
+          <script>
+				
+               $(document).ready(function(){
+                    $("#the_lights").fadeTo(1,0);
+                    
+					$("#login").hide();
+					$("#turnoff").click(function () {
+                         $("#the_lights").css({'display' : 'block'});
+                         $("#the_lights").fadeTo("slow",1);
+
+						 
+					$("#startbar").hide();
+					$(".calget").hide();
+                    });
+                    $("#soft").click(function () {
+                         document.getElementById("the_lights").style.display="block";
+                         $("#the_lights").fadeTo("slow",0.8);
+						 $("#startbar").hide();
+						 $("#login").show();
+						 $(".calget").hide();
+                    });
+                    $("#turnon").click(function () {
+                         document.getElementById("the_lights").style.display="block";
+                         $("#the_lights").fadeTo("slow",0);
+						 $("#startbar").show();
+                      				 $(".calget").show();
+						 $("#login").hide();
+                    });
+               });
+          </script>
+<script type="text/javascript">
+                function updateClock(){
+                    var date = new Date();
+                    var mins = date.getMinutes();
+                    var hrs = date.getHours();
+                    var ext = "AM";
+                    if(hrs > 12){ 
+                        var ext = "PM";
+                        var hrs = hrs - parseInt(12);
+                    }
+					if(mins >=10)
+                    var currentTime = hrs + ":" + mins + " " + ext;
+					else
+					var currentTime = hrs + ":0" + mins + " " + ext; 
+					var x=document.getElementById("showClock");
+					x.innerHTML = currentTime;
+                }
+                window.setInterval(updateClock, 100);
+				updateClock();
+                
+
+</script>
+<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<meta name="author" content="Dhruv" />
+		<link rel="shortcut icon" href="../favicon.ico"> 
+		<link rel="stylesheet" type="text/css" href="css/default.css" />
+		<link rel="stylesheet" type="text/css" href="css/bookblock.css" />
+		<link rel="stylesheet" type="text/css" href="css/demo2.css" />
+		<link rel="stylesheet" type="text/css" href="css/calendar.css" /> 
+		<script src="js/modernizr.custom.js"></script>
+</head>
+<body>
+
+
+<div id="startbar">
+	<div id="win">
+
+		<div id="menu">
+			<div class="left-menu">
+				<ul>
+					<li><a href="#" class="arrow"><div class="fleft foldr"></div>WorkShops</a>
+						<div class="recent">
+							<hr />
+							<ul>
+								<li><a href="#">3D Animations</a></li>
+								<li><a href="#">Web Development</a></li>
+								<li><a href="#">Designing</a></li>
+								<li><a href="#">Auto-Cad</a></li>
+								<li><a href="#">DIP</a></li>
+								<li><a href="#">Robotics</a></li>
+								<li><a href="#">Flash</a></li>
+								<li><a href="#">Coding</a></li>
+							</ul>
+						</div>
+					</li>
+					<li><a href="#"><div class="fleft foldr"></div>About Us</a></li>
+					<li><a href="#"><div class="fleft foldr"></div>Schedule</a></li>
+					<li><a href="#"><div class="fleft op">O</div>Facebook Page</a></li>
+					<li><a href="#"><div class="fleft ie">e</div>Twitter</a></li>
+				</ul>
+				<form id="search" action="" name="prikitiw"><input type="text" placeholder="Search programs and files" /></form>
+			</div>
+
+			<div class="right-menu">
+				<ul>
+					<li><a href="#">DTU</a></li>
+					<li><a href="#">IEEE</a></li>
+					<li style="border-bottom:1px solid rgba(255,255,255,0.1);padding-top:5px;margin-bottom:2px;"><a href="#">IEEE-DTU</a></li>
+					<li ><a href="#">Computer</a></li>
+					<li><a href="#">Control Panel</a></li>
+				</ul>
+				<div class="shutdown">
+					<div class="lf" id="soft">Log Out</div>
+				</div>
+
+				<div id="kontener">
+					<div class="admin"></div>
+				</div>
+
+			</div> <!-- rightmenu -->
+			<div class="clear"></div>
+		</div> <!-- menu -->
+
+		<div id="cont-win" title="Start">
+			<div class="w1"></div><div class="w2"></div>
+			<div class="clear"></div>
+			<div class="w3"></div><div class="w4"></div>
+			<div class="clear"></div>
+		</div>
+
+	</div> <!-- win -->
+
+	<div id="list">
+
+	<div class="opened tunggal"><div class="foldr small"></div>
+	<div class="screensht">
+		<div class="col1 fold">
+		<div class="close">&times;</div><div class="kotak"></div>
+		</div>
+	</div>
+	</div>
+
+	<div class="opened tunggal"><div class="foldr np small"></div>
+	<div class="screensht">
+		<div class="col1 ntpad">
+		<div class="close">&times;</div><div class="kotak"></div>
+		</div>
+	</div>
+	</div>
+
+	</div> 
+
+	<div id="fright">
+		<div class="plus">
+			<div class="screensht">
+				<div class="grup">
+					<b>&#169; TechWeek - 2013</b><br />
+					<a href="" target="_blank">WTF</a>
+				</div>
+			</div>
+		</div> <!-- plus -->
+
+		<div class="connection" title="Local Area Connection"></div>
+		<div class="speker" title="Sound Control"></div>
+		<div class="jam" id="showClock"></div>
+		<div class="clear"></div>
+	</div>
+
+</div> <!-- startbar -->
+
+<div class="calget">
+	<div class="bb-custom-wrapper" >
+					<div id="bb-bookblock" class="bb-bookblock">
+						<div class="bb-item" title="August 2013">
+							<img class="bb-custom-img" src="images/1.jpg" alt="image01"/>
+							<div class="fc-calendar-wrap">
+								<h2>Day 1</h2>
+								<div class="fc-calendar-container"><div class="fc-calendar fc-five-rows"><div class="fc-head"><div>M</div><div>T</div><div>W</div><div>Th</div><div>Fr</div><div>Sa</div><div>Su</div></div><div class="fc-body"><div class="fc-row"><div></div><div></div><div></div><div><span class="fc-date">1</span><span class="fc-weekday">Thu</span></div><div><span class="fc-date">2</span><span class="fc-weekday">Fri</span></div><div><span class="fc-date">3</span><span class="fc-weekday">Sat</span></div><div><span class="fc-date">4</span><span class="fc-weekday">Sun</span></div></div><div class="fc-row"><div><span class="fc-date">5</span><span class="fc-weekday">Mon</span></div><div><span class="fc-date">6</span><span class="fc-weekday">Tue</span></div><div><span class="fc-date">7</span><span class="fc-weekday">Wed</span></div><div><span class="fc-date">8</span><span class="fc-weekday">Thu</span></div><div><span class="fc-date">9</span><span class="fc-weekday">Fri</span></div><div><span class="fc-date">10</span><span class="fc-weekday">Sat</span></div><div><span class="fc-date">11</span><span class="fc-weekday">Sun</span></div></div><div class="fc-row"><div><span class="fc-date">12</span><span class="fc-weekday">Mon</span></div><div><span class="fc-date">13</span><span class="fc-weekday">Tue</span></div><div><span class="fc-date">14</span><span class="fc-weekday">Wed</span></div><div><span class="fc-date">15</span><span class="fc-weekday">Thu</span></div><div><span class="fc-date">16</span><span class="fc-weekday">Fri</span></div><div><span class="fc-date">17</span><span class="fc-weekday">Sat</span></div><div><span class="fc-date">18</span><span class="fc-weekday">Sun</span></div></div><div class="fc-row"><div><span class="fc-date">19</span><span class="fc-weekday">Mon</span></div><div><span class="fc-date">20</span><span class="fc-weekday">Tue</span></div><div><span class="fc-date">21</span><span class="fc-weekday">Wed</span></div><div><span class="fc-date">22</span><span class="fc-weekday">Thu</span></div><div><span class="fc-date">23</span><span class="fc-weekday">Fri</span></div><div><span class="fc-date">24</span><span class="fc-weekday">Sat</span></div><div><span class="fc-date1">25</span><span class="fc-weekday">Sun</span></div></div><div class="fc-row"><div><span class="fc-date">26</span><span class="fc-weekday">Mon</span></div><div><span class="fc-date">27</span><span class="fc-weekday">Tue</span></div><div><span class="fc-date">28</span><span class="fc-weekday">Wed</span></div><div><span class="fc-date">29</span><span class="fc-weekday">Thu</span></div><div><span class="fc-date">30</span><span class="fc-weekday">Fri</span></div><div><span class="fc-date">31</span><span class="fc-weekday">Sat</span></div><div></div></div></div></div>
+							</div>								
+							</div>
+						</div>
+						<div class="bb-item" title="August 2013">
+							<img class="bb-custom-img" src="images/2.jpg" alt="image02"/>
+							<div class="fc-calendar-wrap">
+								<h2>Day 2</h2>
+								<div class="fc-calendar-container"><div class="fc-calendar fc-five-rows"><div class="fc-head"><div>M</div><div>T</div><div>W</div><div>Th</div><div>Fr</div><div>Sa</div><div>Su</div></div><div class="fc-body"><div class="fc-row"><div></div><div></div><div></div><div><span class="fc-date">1</span><span class="fc-weekday">Thu</span></div><div><span class="fc-date">2</span><span class="fc-weekday">Fri</span></div><div><span class="fc-date">3</span><span class="fc-weekday">Sat</span></div><div><span class="fc-date">4</span><span class="fc-weekday">Sun</span></div></div><div class="fc-row"><div><span class="fc-date">5</span><span class="fc-weekday">Mon</span></div><div><span class="fc-date">6</span><span class="fc-weekday">Tue</span></div><div><span class="fc-date">7</span><span class="fc-weekday">Wed</span></div><div><span class="fc-date">8</span><span class="fc-weekday">Thu</span></div><div><span class="fc-date">9</span><span class="fc-weekday">Fri</span></div><div><span class="fc-date">10</span><span class="fc-weekday">Sat</span></div><div><span class="fc-date">11</span><span class="fc-weekday">Sun</span></div></div><div class="fc-row"><div><span class="fc-date">12</span><span class="fc-weekday">Mon</span></div><div><span class="fc-date">13</span><span class="fc-weekday">Tue</span></div><div><span class="fc-date">14</span><span class="fc-weekday">Wed</span></div><div><span class="fc-date">15</span><span class="fc-weekday">Thu</span></div><div><span class="fc-date">16</span><span class="fc-weekday">Fri</span></div><div><span class="fc-date">17</span><span class="fc-weekday">Sat</span></div><div><span class="fc-date">18</span><span class="fc-weekday">Sun</span></div></div><div class="fc-row"><div><span class="fc-date">19</span><span class="fc-weekday">Mon</span></div><div><span class="fc-date">20</span><span class="fc-weekday">Tue</span></div><div><span class="fc-date">21</span><span class="fc-weekday">Wed</span></div><div><span class="fc-date">22</span><span class="fc-weekday">Thu</span></div><div><span class="fc-date">23</span><span class="fc-weekday">Fri</span></div><div><span class="fc-date">24</span><span class="fc-weekday">Sat</span></div><div><span class="fc-date">25</span><span class="fc-weekday">Sun</span></div></div><div class="fc-row"><div><span class="fc-date1">26</span><span class="fc-weekday">Mon</span></div><div><span class="fc-date">27</span><span class="fc-weekday">Tue</span></div><div><span class="fc-date">28</span><span class="fc-weekday">Wed</span></div><div><span class="fc-date">29</span><span class="fc-weekday">Thu</span></div><div><span class="fc-date">30</span><span class="fc-weekday">Fri</span></div><div><span class="fc-date">31</span><span class="fc-weekday">Sat</span></div><div></div></div></div></div>
+							</div>
+							</div>
+						</div>
+						<div class="bb-item" title="August 2013">
+							<img class="bb-custom-img" src="images/3.jpg" alt="image03"/>
+							<div class="fc-calendar-wrap">
+								<h2>Day 3</h2>
+								<div class="fc-calendar-container"><div class="fc-calendar fc-five-rows"><div class="fc-head"><div>M</div><div>T</div><div>W</div><div>Th</div><div>Fr</div><div>Sa</div><div>Su</div></div><div class="fc-body"><div class="fc-row"><div></div><div></div><div></div><div><span class="fc-date">1</span><span class="fc-weekday">Thu</span></div><div><span class="fc-date">2</span><span class="fc-weekday">Fri</span></div><div><span class="fc-date">3</span><span class="fc-weekday">Sat</span></div><div><span class="fc-date">4</span><span class="fc-weekday">Sun</span></div></div><div class="fc-row"><div><span class="fc-date">5</span><span class="fc-weekday">Mon</span></div><div><span class="fc-date">6</span><span class="fc-weekday">Tue</span></div><div><span class="fc-date">7</span><span class="fc-weekday">Wed</span></div><div><span class="fc-date">8</span><span class="fc-weekday">Thu</span></div><div><span class="fc-date">9</span><span class="fc-weekday">Fri</span></div><div><span class="fc-date">10</span><span class="fc-weekday">Sat</span></div><div><span class="fc-date">11</span><span class="fc-weekday">Sun</span></div></div><div class="fc-row"><div><span class="fc-date">12</span><span class="fc-weekday">Mon</span></div><div><span class="fc-date">13</span><span class="fc-weekday">Tue</span></div><div><span class="fc-date">14</span><span class="fc-weekday">Wed</span></div><div><span class="fc-date">15</span><span class="fc-weekday">Thu</span></div><div><span class="fc-date">16</span><span class="fc-weekday">Fri</span></div><div><span class="fc-date">17</span><span class="fc-weekday">Sat</span></div><div><span class="fc-date">18</span><span class="fc-weekday">Sun</span></div></div><div class="fc-row"><div><span class="fc-date">19</span><span class="fc-weekday">Mon</span></div><div><span class="fc-date">20</span><span class="fc-weekday">Tue</span></div><div><span class="fc-date">21</span><span class="fc-weekday">Wed</span></div><div><span class="fc-date">22</span><span class="fc-weekday">Thu</span></div><div><span class="fc-date">23</span><span class="fc-weekday">Fri</span></div><div><span class="fc-date">24</span><span class="fc-weekday">Sat</span></div><div><span class="fc-date">25</span><span class="fc-weekday">Sun</span></div></div><div class="fc-row"><div><span class="fc-date">26</span><span class="fc-weekday">Mon</span></div><div><span class="fc-date1">27</span><span class="fc-weekday">Tue</span></div><div><span class="fc-date">28</span><span class="fc-weekday">Wed</span></div><div><span class="fc-date">29</span><span class="fc-weekday">Thu</span></div><div><span class="fc-date">30</span><span class="fc-weekday">Fri</span></div><div><span class="fc-date">31</span><span class="fc-weekday">Sat</span></div><div></div></div></div></div>
+								</div>
+							</div>
+						</div>
+						<div class="bb-item" title="August 2013">
+							<img class="bb-custom-img" src="images/4.jpg" alt="image04"/>
+							<div class="fc-calendar-wrap">
+								<h2>Day 4</h2>
+								<div class="fc-calendar-container"><div class="fc-calendar fc-five-rows"><div class="fc-head"><div>M</div><div>T</div><div>W</div><div>Th</div><div>Fr</div><div>Sa</div><div>Su</div></div><div class="fc-body"><div class="fc-row"><div></div><div></div><div></div><div><span class="fc-date">1</span><span class="fc-weekday">Thu</span></div><div><span class="fc-date">2</span><span class="fc-weekday">Fri</span></div><div><span class="fc-date">3</span><span class="fc-weekday">Sat</span></div><div><span class="fc-date">4</span><span class="fc-weekday">Sun</span></div></div><div class="fc-row"><div><span class="fc-date">5</span><span class="fc-weekday">Mon</span></div><div><span class="fc-date">6</span><span class="fc-weekday">Tue</span></div><div><span class="fc-date">7</span><span class="fc-weekday">Wed</span></div><div><span class="fc-date">8</span><span class="fc-weekday">Thu</span></div><div><span class="fc-date">9</span><span class="fc-weekday">Fri</span></div><div><span class="fc-date">10</span><span class="fc-weekday">Sat</span></div><div><span class="fc-date">11</span><span class="fc-weekday">Sun</span></div></div><div class="fc-row"><div><span class="fc-date">12</span><span class="fc-weekday">Mon</span></div><div><span class="fc-date">13</span><span class="fc-weekday">Tue</span></div><div><span class="fc-date">14</span><span class="fc-weekday">Wed</span></div><div><span class="fc-date">15</span><span class="fc-weekday">Thu</span></div><div><span class="fc-date">16</span><span class="fc-weekday">Fri</span></div><div><span class="fc-date">17</span><span class="fc-weekday">Sat</span></div><div><span class="fc-date">18</span><span class="fc-weekday">Sun</span></div></div><div class="fc-row"><div><span class="fc-date">19</span><span class="fc-weekday">Mon</span></div><div><span class="fc-date">20</span><span class="fc-weekday">Tue</span></div><div><span class="fc-date">21</span><span class="fc-weekday">Wed</span></div><div><span class="fc-date">22</span><span class="fc-weekday">Thu</span></div><div><span class="fc-date">23</span><span class="fc-weekday">Fri</span></div><div><span class="fc-date">24</span><span class="fc-weekday">Sat</span></div><div><span class="fc-date">25</span><span class="fc-weekday">Sun</span></div></div><div class="fc-row"><div><span class="fc-date">26</span><span class="fc-weekday">Mon</span></div><div><span class="fc-date">27</span><span class="fc-weekday">Tue</span></div><div><span class="fc-date1">28</span><span class="fc-weekday">Wed</span></div><div><span class="fc-date">29</span><span class="fc-weekday">Thu</span></div><div><span class="fc-date">30</span><span class="fc-weekday">Fri</span></div><div><span class="fc-date">31</span><span class="fc-weekday">Sat</span></div><div></div></div></div></div>
+								</div>
+							</div>
+						</div>
+						<div class="bb-item" title="August 2013">
+							<img class="bb-custom-img" src="images/5.jpg" alt="image05"/>
+							<div class="fc-calendar-wrap">
+								<h2>Day 5</h2>
+								<div class="fc-calendar-container"><div class="fc-calendar fc-five-rows"><div class="fc-head"><div>M</div><div>T</div><div>W</div><div>Th</div><div>Fr</div><div>Sa</div><div>Su</div></div><div class="fc-body"><div class="fc-row"><div></div><div></div><div></div><div><span class="fc-date">1</span><span class="fc-weekday">Thu</span></div><div><span class="fc-date">2</span><span class="fc-weekday">Fri</span></div><div><span class="fc-date">3</span><span class="fc-weekday">Sat</span></div><div><span class="fc-date">4</span><span class="fc-weekday">Sun</span></div></div><div class="fc-row"><div><span class="fc-date">5</span><span class="fc-weekday">Mon</span></div><div><span class="fc-date">6</span><span class="fc-weekday">Tue</span></div><div><span class="fc-date">7</span><span class="fc-weekday">Wed</span></div><div><span class="fc-date">8</span><span class="fc-weekday">Thu</span></div><div><span class="fc-date">9</span><span class="fc-weekday">Fri</span></div><div><span class="fc-date">10</span><span class="fc-weekday">Sat</span></div><div><span class="fc-date">11</span><span class="fc-weekday">Sun</span></div></div><div class="fc-row"><div><span class="fc-date">12</span><span class="fc-weekday">Mon</span></div><div><span class="fc-date">13</span><span class="fc-weekday">Tue</span></div><div><span class="fc-date">14</span><span class="fc-weekday">Wed</span></div><div><span class="fc-date">15</span><span class="fc-weekday">Thu</span></div><div><span class="fc-date">16</span><span class="fc-weekday">Fri</span></div><div><span class="fc-date">17</span><span class="fc-weekday">Sat</span></div><div><span class="fc-date">18</span><span class="fc-weekday">Sun</span></div></div><div class="fc-row"><div><span class="fc-date">19</span><span class="fc-weekday">Mon</span></div><div><span class="fc-date">20</span><span class="fc-weekday">Tue</span></div><div><span class="fc-date">21</span><span class="fc-weekday">Wed</span></div><div><span class="fc-date">22</span><span class="fc-weekday">Thu</span></div><div><span class="fc-date">23</span><span class="fc-weekday">Fri</span></div><div><span class="fc-date">24</span><span class="fc-weekday">Sat</span></div><div><span class="fc-date">25</span><span class="fc-weekday">Sun</span></div></div><div class="fc-row"><div><span class="fc-date">26</span><span class="fc-weekday">Mon</span></div><div><span class="fc-date">27</span><span class="fc-weekday">Tue</span></div><div><span class="fc-date">28</span><span class="fc-weekday">Wed</span></div><div><span class="fc-date1">29</span><span class="fc-weekday">Thu</span></div><div><span class="fc-date">30</span><span class="fc-weekday">Fri</span></div><div><span class="fc-date">31</span><span class="fc-weekday">Sat</span></div><div></div></div></div></div>
+								</div>
+							</div>
+						</div>
+						<div class="bb-item" title="August 2013">
+							<img class="bb-custom-img" src="images/6.jpg" alt="image06"/>
+							<div class="fc-calendar-wrap">
+								<h2>Day 6</h2>
+								<div class="fc-calendar-container"><div class="fc-calendar fc-five-rows"><div class="fc-head"><div>M</div><div>T</div><div>W</div><div>Th</div><div>Fr</div><div>Sa</div><div>Su</div></div><div class="fc-body"><div class="fc-row"><div></div><div></div><div></div><div><span class="fc-date">1</span><span class="fc-weekday">Thu</span></div><div><span class="fc-date">2</span><span class="fc-weekday">Fri</span></div><div><span class="fc-date">3</span><span class="fc-weekday">Sat</span></div><div><span class="fc-date">4</span><span class="fc-weekday">Sun</span></div></div><div class="fc-row"><div><span class="fc-date">5</span><span class="fc-weekday">Mon</span></div><div><span class="fc-date">6</span><span class="fc-weekday">Tue</span></div><div><span class="fc-date">7</span><span class="fc-weekday">Wed</span></div><div><span class="fc-date">8</span><span class="fc-weekday">Thu</span></div><div><span class="fc-date">9</span><span class="fc-weekday">Fri</span></div><div><span class="fc-date">10</span><span class="fc-weekday">Sat</span></div><div><span class="fc-date">11</span><span class="fc-weekday">Sun</span></div></div><div class="fc-row"><div><span class="fc-date">12</span><span class="fc-weekday">Mon</span></div><div><span class="fc-date">13</span><span class="fc-weekday">Tue</span></div><div><span class="fc-date">14</span><span class="fc-weekday">Wed</span></div><div><span class="fc-date">15</span><span class="fc-weekday">Thu</span></div><div><span class="fc-date">16</span><span class="fc-weekday">Fri</span></div><div><span class="fc-date">17</span><span class="fc-weekday">Sat</span></div><div><span class="fc-date">18</span><span class="fc-weekday">Sun</span></div></div><div class="fc-row"><div><span class="fc-date">19</span><span class="fc-weekday">Mon</span></div><div><span class="fc-date">20</span><span class="fc-weekday">Tue</span></div><div><span class="fc-date">21</span><span class="fc-weekday">Wed</span></div><div><span class="fc-date">22</span><span class="fc-weekday">Thu</span></div><div><span class="fc-date">23</span><span class="fc-weekday">Fri</span></div><div><span class="fc-date">24</span><span class="fc-weekday">Sat</span></div><div><span class="fc-date">25</span><span class="fc-weekday">Sun</span></div></div><div class="fc-row"><div><span class="fc-date">26</span><span class="fc-weekday">Mon</span></div><div><span class="fc-date">27</span><span class="fc-weekday">Tue</span></div><div><span class="fc-date">28</span><span class="fc-weekday">Wed</span></div><div><span class="fc-date">29</span><span class="fc-weekday">Thu</span></div><div><span class="fc-date1">30</span><span class="fc-weekday">Fri</span></div><div><span class="fc-date">31</span><span class="fc-weekday">Sat</span></div><div></div></div></div></div>
+								</div>
+							</div>
+						</div>
+						<div class="bb-item" title="August 2013">
+							<img class="bb-custom-img" src="images/7.jpg" alt="image07"/>
+							<div class="fc-calendar-wrap">
+								<h2>Day 7</h2>
+								<div class="fc-calendar-container"><div class="fc-calendar fc-five-rows"><div class="fc-head"><div>M</div><div>T</div><div>W</div><div>Th</div><div>Fr</div><div>Sa</div><div>Su</div></div><div class="fc-body"><div class="fc-row"><div></div><div></div><div></div><div><span class="fc-date">1</span><span class="fc-weekday">Thu</span></div><div><span class="fc-date">2</span><span class="fc-weekday">Fri</span></div><div><span class="fc-date">3</span><span class="fc-weekday">Sat</span></div><div><span class="fc-date">4</span><span class="fc-weekday">Sun</span></div></div><div class="fc-row"><div><span class="fc-date">5</span><span class="fc-weekday">Mon</span></div><div><span class="fc-date">6</span><span class="fc-weekday">Tue</span></div><div><span class="fc-date">7</span><span class="fc-weekday">Wed</span></div><div><span class="fc-date">8</span><span class="fc-weekday">Thu</span></div><div><span class="fc-date">9</span><span class="fc-weekday">Fri</span></div><div><span class="fc-date">10</span><span class="fc-weekday">Sat</span></div><div><span class="fc-date">11</span><span class="fc-weekday">Sun</span></div></div><div class="fc-row"><div><span class="fc-date">12</span><span class="fc-weekday">Mon</span></div><div><span class="fc-date">13</span><span class="fc-weekday">Tue</span></div><div><span class="fc-date">14</span><span class="fc-weekday">Wed</span></div><div><span class="fc-date">15</span><span class="fc-weekday">Thu</span></div><div><span class="fc-date">16</span><span class="fc-weekday">Fri</span></div><div><span class="fc-date">17</span><span class="fc-weekday">Sat</span></div><div><span class="fc-date">18</span><span class="fc-weekday">Sun</span></div></div><div class="fc-row"><div><span class="fc-date">19</span><span class="fc-weekday">Mon</span></div><div><span class="fc-date">20</span><span class="fc-weekday">Tue</span></div><div><span class="fc-date">21</span><span class="fc-weekday">Wed</span></div><div><span class="fc-date">22</span><span class="fc-weekday">Thu</span></div><div><span class="fc-date">23</span><span class="fc-weekday">Fri</span></div><div><span class="fc-date">24</span><span class="fc-weekday">Sat</span></div><div><span class="fc-date">25</span><span class="fc-weekday">Sun</span></div></div><div class="fc-row"><div><span class="fc-date">26</span><span class="fc-weekday">Mon</span></div><div><span class="fc-date">27</span><span class="fc-weekday">Tue</span></div><div><span class="fc-date">28</span><span class="fc-weekday">Wed</span></div><div><span class="fc-date">29</span><span class="fc-weekday">Thu</span></div><div><span class="fc-date">30</span><span class="fc-weekday">Fri</span></div><div><span class="fc-date1">31</span><span class="fc-weekday">Sat</span></div><div></div></div></div></div>
+								</div>
+							</div>
+						</div>
+						<div class="bb-item" title="September 2013">
+							<img class="bb-custom-img" src="images/8.jpg" alt="image08"/>
+							<div class="fc-calendar-wrap">
+								<h2>Day 8</h2>
+								<div class="fc-calendar-container"><div class="fc-calendar fc-six-rows"><div class="fc-head"><div>M</div><div>T</div><div>W</div><div>Th</div><div>Fr</div><div>Sa</div><div>Su</div></div><div class="fc-body"><div class="fc-row"><div></div><div></div><div></div><div></div><div></div><div></div><div><span class="fc-date">1</span><span class="fc-weekday">Sun</span></div></div><div class="fc-row"><div><span class="fc-date1">2</span><span class="fc-weekday">Mon</span></div><div><span class="fc-date">3</span><span class="fc-weekday">Tue</span></div><div><span class="fc-date">4</span><span class="fc-weekday">Wed</span></div><div><span class="fc-date">5</span><span class="fc-weekday">Thu</span></div><div><span class="fc-date">6</span><span class="fc-weekday">Fri</span></div><div><span class="fc-date">7</span><span class="fc-weekday">Sat</span></div><div><span class="fc-date">8</span><span class="fc-weekday">Sun</span></div></div><div class="fc-row"><div><span class="fc-date">9</span><span class="fc-weekday">Mon</span></div><div><span class="fc-date">10</span><span class="fc-weekday">Tue</span></div><div><span class="fc-date">11</span><span class="fc-weekday">Wed</span></div><div><span class="fc-date">12</span><span class="fc-weekday">Thu</span></div><div><span class="fc-date">13</span><span class="fc-weekday">Fri</span></div><div><span class="fc-date">14</span><span class="fc-weekday">Sat</span></div><div><span class="fc-date">15</span><span class="fc-weekday">Sun</span></div></div><div class="fc-row"><div><span class="fc-date">16</span><span class="fc-weekday">Mon</span></div><div><span class="fc-date">17</span><span class="fc-weekday">Tue</span></div><div><span class="fc-date">18</span><span class="fc-weekday">Wed</span></div><div><span class="fc-date">19</span><span class="fc-weekday">Thu</span></div><div><span class="fc-date">20</span><span class="fc-weekday">Fri</span></div><div><span class="fc-date">21</span><span class="fc-weekday">Sat</span></div><div><span class="fc-date">22</span><span class="fc-weekday">Sun</span></div></div><div class="fc-row"><div><span class="fc-date">23</span><span class="fc-weekday">Mon</span></div><div><span class="fc-date">24</span><span class="fc-weekday">Tue</span></div><div><span class="fc-date">25</span><span class="fc-weekday">Wed</span></div><div><span class="fc-date">26</span><span class="fc-weekday">Thu</span></div><div><span class="fc-date">27</span><span class="fc-weekday">Fri</span></div><div><span class="fc-date">28</span><span class="fc-weekday">Sat</span></div><div><span class="fc-date">29</span><span class="fc-weekday">Sun</span></div></div><div class="fc-row"><div><span class="fc-date">30</span><span class="fc-weekday">Mon</span></div><div></div><div></div><div></div><div></div><div></div><div></div></div></div></div></div>
+							</div>
+						</div>
+						<div class="bb-item" title="September 2013">
+							<img class="bb-custom-img" src="images/9.jpg" alt="image09"/>
+							<div class="fc-calendar-wrap">
+								<h2>Day 9</h2>
+								<div class="fc-calendar-container"><div class="fc-calendar fc-six-rows"><div class="fc-head"><div>M</div><div>T</div><div>W</div><div>Th</div><div>Fr</div><div>Sa</div><div>Su</div></div><div class="fc-body"><div class="fc-row"><div></div><div></div><div></div><div></div><div></div><div></div><div><span class="fc-date">1</span><span class="fc-weekday">Sun</span></div></div><div class="fc-row"><div><span class="fc-date">2</span><span class="fc-weekday">Mon</span></div><div><span class="fc-date1">3</span><span class="fc-weekday">Tue</span></div><div><span class="fc-date">4</span><span class="fc-weekday">Wed</span></div><div><span class="fc-date">5</span><span class="fc-weekday">Thu</span></div><div><span class="fc-date">6</span><span class="fc-weekday">Fri</span></div><div><span class="fc-date">7</span><span class="fc-weekday">Sat</span></div><div><span class="fc-date">8</span><span class="fc-weekday">Sun</span></div></div><div class="fc-row"><div><span class="fc-date">9</span><span class="fc-weekday">Mon</span></div><div><span class="fc-date">10</span><span class="fc-weekday">Tue</span></div><div><span class="fc-date">11</span><span class="fc-weekday">Wed</span></div><div><span class="fc-date">12</span><span class="fc-weekday">Thu</span></div><div><span class="fc-date">13</span><span class="fc-weekday">Fri</span></div><div><span class="fc-date">14</span><span class="fc-weekday">Sat</span></div><div><span class="fc-date">15</span><span class="fc-weekday">Sun</span></div></div><div class="fc-row"><div><span class="fc-date">16</span><span class="fc-weekday">Mon</span></div><div><span class="fc-date">17</span><span class="fc-weekday">Tue</span></div><div><span class="fc-date">18</span><span class="fc-weekday">Wed</span></div><div><span class="fc-date">19</span><span class="fc-weekday">Thu</span></div><div><span class="fc-date">20</span><span class="fc-weekday">Fri</span></div><div><span class="fc-date">21</span><span class="fc-weekday">Sat</span></div><div><span class="fc-date">22</span><span class="fc-weekday">Sun</span></div></div><div class="fc-row"><div><span class="fc-date">23</span><span class="fc-weekday">Mon</span></div><div><span class="fc-date">24</span><span class="fc-weekday">Tue</span></div><div><span class="fc-date">25</span><span class="fc-weekday">Wed</span></div><div><span class="fc-date">26</span><span class="fc-weekday">Thu</span></div><div><span class="fc-date">27</span><span class="fc-weekday">Fri</span></div><div><span class="fc-date">28</span><span class="fc-weekday">Sat</span></div><div><span class="fc-date">29</span><span class="fc-weekday">Sun</span></div></div><div class="fc-row"><div><span class="fc-date">30</span><span class="fc-weekday">Mon</span></div><div></div><div></div><div></div><div></div><div></div><div></div></div></div></div></div>
+							</div>
+							
+						</div>
+						
+						
+					
+					<div class="nav">
+						<a id="bb-nav-prev" href="#" class="bb-custom-icon bb-custom-icon-arrow-left">Previous</a>
+						<a id="bb-nav-next" href="#" class="bb-custom-icon bb-custom-icon-arrow-right">Next</a>
+					</div>
+					</div>
+				</div>
+</div>
+
+
+<div id="the_lights"></div>
+<div id="login">
+		<div class="admin"></div>
+		<div class="user">TechWeek</div>
+		<div class="button" id="turnon">Log In</div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script src="js/jquery.bookblock.js"></script>
+		<script>
+			var Page = (function() {
+				
+				var config = {
+						$bookBlock : $( '#bb-bookblock' ),
+						$navNext : $( '#bb-nav-next' ),
+						$navPrev : $( '#bb-nav-prev' )
+					},
+					init = function() {
+						config.$bookBlock.bookblock( {
+							orientation : 'horizontal',
+							speed : 700
+						} );
+						initEvents();
+					},
+					initEvents = function() {
+
+						var $slides = config.$bookBlock.children();
+						
+						// add navigation events
+						config.$navNext.on( 'click touchstart', function() {
+							config.$bookBlock.bookblock( 'next' );
+							return false;
+						} );
+
+						config.$navPrev.on( 'click touchstart', function() {
+							config.$bookBlock.bookblock( 'prev' );
+							return false;
+						} );
+
+						// add keyboard events
+						$( document ).keydown( function(e) {
+							var keyCode = e.keyCode || e.which,
+								arrow = {
+									left : 37,
+									up : 38,
+									right : 39,
+									down : 40
+								};
+
+							switch (keyCode) {
+								case arrow.up:
+									config.$bookBlock.bookblock( 'prev' );
+									e.preventDefault();
+									break;
+								case arrow.down:
+									config.$bookBlock.bookblock( 'next' );
+									e.preventDefault();
+									break;
+							}
+
+						} );
+					};
+
+					return { init : init };
+
+			})();
+		</script>
+		<script>
+				Page.init();
+		</script>
+
+
+</body>
+</html>
