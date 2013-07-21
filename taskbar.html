@@ -1,6 +1,6 @@
 <html>
 <head>
-<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
 <script>
 function startTime()
 {
@@ -24,20 +24,33 @@ if (i<10)
 return i;
 }
 </script>
+
+
+
 </head>
 
 </head>
-<body onload="startTime()">
-<div id="author">
+<body onload="startTime()" id ="body">
+<!--<div id="author">
 	<h1>CSS3 Experiment: Windows7 Start Menus</h1>
 	<div class="deskripsi">
 		<b>Pure CSS3 Windows7 Start Menus</b><br />No Images, No JavaScripts!<br />
 		Author: Taufik Nurrohman
 	</div>
-</div>
+</div> -->
 
 
-<div id="startbar">
+ <div id = "infoWin" >
+     <div id= "infotxt">     
+ <b>Pure CSS3 Windows7 Start Menus</b><br />No Images, No JavaScripts!<br />
+		Author: super mario 
+<b>Pure CSS3 Windows7 Start Menus</b><br />No Images, No JavaScripts!<br />
+		Author: super mario
+     </div>		
+ </div>
+
+
+ <div id="startbar">
 	<div id="win">
 
 		<div id="menu">
@@ -171,5 +184,14 @@ return i;
 	</div>
 
 </div> <!-- startbar -->
+<script src="js/drag.js"></script>
+<script>
+var elem = document.querySelector('#infoWin');
+var draggie = new Draggabilly( elem, {
+  containment : '#body' ,
+  handle : '#infoWin'
+});
+
+</script>
 </body>
 </html>
