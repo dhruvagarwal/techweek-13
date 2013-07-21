@@ -17,6 +17,9 @@
 						 
 					$("#startbar").hide();
 					$(".calget").hide();
+					$(".window").hide();
+  				   $(".icons").hide();
+                   
                     });
                     $("#soft").click(function () {
                          document.getElementById("the_lights").style.display="block";
@@ -24,12 +27,16 @@
 						 $("#startbar").hide();
 						 $("#login").fadeIn();
 						 $(".calget").hide();
+						 $(".window").hide();
+						 $(".icons").hide();
                     });
                     $("#turnon").click(function () {
                          document.getElementById("the_lights").style.display="block";
                          $("#the_lights").fadeTo("slow",0);
 						 $("#startbar").fadeIn();
                       				 $(".calget").fadeIn();
+                      				 $(".window").fadeIn();
+                      				 $(".icons").fadeIn();
 						 $("#login").hide();
                     });
                });
@@ -69,6 +76,13 @@
 </head>
 <body>
 
+
+<div id="the_lights"></div>
+<div id="login">
+		<div class="admin"></div>
+		<div class="user">TechWeek</div>
+		<div class="button" id="turnon">Log In</div>
+</div>
 <div id="startbar">
 	<div id="win">
 
@@ -248,7 +262,7 @@
 					</div>
 				</div>
 </div>
-
+<div class="icons">
 <ul class="menu_0" type="none">
 <li> <div id="iconn" style="background-image:url('icons/flash.jpg');"> <p style="position:relative; top:110%; left:20%;"> Flash </p> </div> </li> <br> <br> <br>
 <li> <div id="iconn" style="background-image:url('icons/3d.jpg'); "> <p style="left:9%;"> 3D_Animation </p> </div> </li> <br> <br> <br>
@@ -265,14 +279,17 @@
 <li> <div id="iconn" style="background-image:url('icons/html.jpg'); width:4.5em; background-size:4.5em 3em;"> <p style="left:-5%;"> Web_Development </p> </div> </li> <br> <br> <br>
 
 </ul>
-
+</div>
 <div class="window">
+SIG name
 <div class="wcmd">
+
  <a class="min">-</a>
  <a class="max">□</a>
  <a class="close">✖</a>
 </div>
 <div class="con-wrap">
+
  <div class="foot">
  <img src="images/12.jpg">
  <b>DHRUV</b>
@@ -284,12 +301,6 @@
 
 </div>
 
-<div id="the_lights"></div>
-<div id="login">
-		<div class="admin"></div>
-		<div class="user">TechWeek</div>
-		<div class="button" id="turnon">Log In</div>
-</div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 		<script src="js/jquery.bookblock.js"></script>

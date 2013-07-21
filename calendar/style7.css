@@ -1183,8 +1183,8 @@ color:white;
 
 #iconn:hover
 {
-background-color:white;
-opacity:0.1;
+background-color:whitesmoke;
+opacity:0.5;
 -webkit-transition-duration: 0.5s;
    -moz-transition-duration: 0.5s;
 }
@@ -1210,7 +1210,7 @@ float: right;
 }
 .con-wrap{
 border:solid 1px #102a3e;
-margin:50px auto;
+margin:30px auto;
 width: 640px;
 background: #fff;
 height: 387px;
