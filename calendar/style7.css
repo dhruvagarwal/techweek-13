@@ -931,7 +931,7 @@ text-align : center;
 }
 
 .opened.tunggal .screensht .col1.fold:before {
-  content:"My Documents";
+  content:"SIG NAME";
   position:absolute;
   display:block;
   top:7px;

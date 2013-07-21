@@ -10,6 +10,7 @@
                     $("#the_lights").fadeTo(1,0);
                     
 					$("#login").hide();
+					$(".window").hide();
 					$("#turnoff").click(function () {
                          $("#the_lights").css({'display' : 'block'});
                          $("#the_lights").fadeTo("slow",1);
@@ -19,6 +20,7 @@
 					$(".calget").hide();
 					$(".window").hide();
   				   $(".icons").hide();
+  				   
                    
                     });
                     $("#soft").click(function () {
@@ -41,16 +43,23 @@
                     });
                     
                     $(".menu_0").dblclick(function(){
-											$(".window").show();                
+											$(".window").show();
+											$(".opened.tunggal").show();                
                                 
                     });
                     $(".menu_1").dblclick(function(){
-											$(".window").show();                
+											$(".window").show();        
+											$(".opened.tunggal").show();        
                                 
                     });
                     $(".close").click(function(){
                     					$(".window").hide();
+                    					$(".opened.tunggal").hide();
                     });
+                    $(".opened.tunggal").click(function(){
+                    					$(".window").toggle();});
+                    $(".min").click(function(){
+                    					$(".window").hide();});
                });
           </script>
 <script type="text/javascript">
@@ -163,13 +172,6 @@
 	</div>
 	</div>
 
-	<div class="opened tunggal"><div class="foldr np small"></div>
-	<div class="screensht">
-		<div class="col1 ntpad">
-		<div class="close">&times;</div><div class="kotak"></div>
-		</div>
-	</div>
-	</div>
 
 	</div> 
 
