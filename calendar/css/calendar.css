@@ -1,7 +1,7 @@
-/* Style from Caledario: */
+
 
 .fc-calendar-wrap {
-	margin-top: 300px;
+	margin-top: 250px;
 }
 
 .fc-calendar-wrap h2 {
@@ -80,7 +80,7 @@
 	position: relative;
 }
 
-/* IE 9 is rounding up the calc it seems */
+
 .ie9 .fc-calendar .fc-row > div,
 .ie9 .fc-calendar .fc-head > div {
 	width:  14.2%;
@@ -102,7 +102,7 @@
 	width: 30px;
 	height: 20px;
 	font-size: 20px;
-	line-height: 20px;
+	line-height: 10px;
 	font-weight: 700;
 	color: #ceb1bf;
 	bottom: 5px;
@@ -115,11 +115,11 @@ span.fc-date1{
 	width: 30px;
 	height: 20px;
 	font-size: 20px;
-	line-height: 20px;
+	line-height: 10px;
 	font-weight: 700;
 	color: #000000;
 	bottom: 5px;
-	right: 5px;
+	right: 7px;
 	text-align: right;
 }
 
