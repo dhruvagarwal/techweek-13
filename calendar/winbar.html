@@ -9,20 +9,20 @@
                     $("#the_lights").fadeTo(1,0);
                     
 					$("#login").hide();
-					$("#turnoff").click(function () {
+/*					$("#turnoff").click(function () {
                          $("#the_lights").css({'display' : 'block'});
                          $("#the_lights").fadeTo("slow",1);
-
-						 
+ 
 					$("#startbar").hide();
 					$(".calget").hide();
-                    });
+                    });*/
                     $("#soft").click(function () {
                          document.getElementById("the_lights").style.display="block";
                          $("#the_lights").fadeTo("slow",0.8);
 						 $("#startbar").hide();
 						 $("#login").fadeIn();
 						 $(".calget").hide();
+						 $(".window").hide();
                     });
                     $("#turnon").click(function () {
                          document.getElementById("the_lights").style.display="block";
@@ -30,6 +30,7 @@
 						 $("#startbar").fadeIn();
                       				 $(".calget").fadeIn();
 						 $("#login").hide();
+						 $(".window").show();
                     });
                });
           </script>
@@ -67,6 +68,18 @@
 		<script src="js/modernizr.custom.js"></script>
 </head>
 <body>
+
+<div class="window">
+	<p>About Us</p>
+	<div class="win7">
+		<a class="min"></a>
+		<a class="max"></a>
+		<a class="close"></a>
+	</div>
+	<div class="window-in">
+	<p>Hello World!</p>
+	</div>
+</div>
 
 
 <div id="startbar">
