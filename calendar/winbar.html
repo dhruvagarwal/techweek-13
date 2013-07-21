@@ -11,6 +11,7 @@
                     
 					$("#login").hide();
 					$(".window").hide();
+					$(".opened.tunggal").hide();
 					$("#turnoff").click(function () {
                          $("#the_lights").css({'display' : 'block'});
                          $("#the_lights").fadeTo("slow",1);
@@ -19,6 +20,7 @@
 					$("#startbar").hide();
 					$(".calget").hide();
 					$(".window").hide();
+					
   				   $(".icons").hide();
   				   
                    
@@ -37,7 +39,7 @@
                          $("#the_lights").fadeTo("slow",0);
 						 $("#startbar").fadeIn();
                       				 $(".calget").fadeIn();
-                      				 $(".window").fadeIn();
+                      				 $(".opened.tunggal").hide();
                       				 $(".icons").fadeIn();
 						 $("#login").hide();
                     });
@@ -60,6 +62,10 @@
                     					$(".window").toggle();});
                     $(".min").click(function(){
                     					$(".window").hide();});
+                    $(".opened.tunggal.screensht.col1.fold.close").click(function(){
+                    					$(".window").hide();
+                    					$(".opened.tunggal").hide();
+                    });
                });
           </script>
 <script type="text/javascript">
