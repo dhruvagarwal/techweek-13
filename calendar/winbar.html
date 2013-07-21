@@ -66,6 +66,10 @@
                     					$(".window").hide();
                     					$(".opened.tunggal").hide();
                     });
+                    $(document).keyup(function(e) {
+
+						  					if (e.keyCode == 27) { $('.window').hide(); }   // esc
+							});
                });
           </script>
 <script type="text/javascript">
@@ -304,9 +308,9 @@
 SIG name
 <div class="wcmd">
 
- <a class="min">-</a>
+ <a href="#" class="min">-</a>
  <a class="max">□</a>
- <a class="close">✖</a>
+ <a href="#" class="close">✖</a>
 </div>
 <div class="con-wrap">
 
