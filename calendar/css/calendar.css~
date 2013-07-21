@@ -1,7 +1,7 @@
 
 
 .fc-calendar-wrap {
-	margin-top: 200px;
+	margin-top: 225px;
 }
 
 .fc-calendar-wrap h2 {
@@ -19,7 +19,7 @@
 
 .fc-calendar-container {
 	position: relative;
-	height: 300px;
+	height: 275px;
 	width: 100%;
 }
 
