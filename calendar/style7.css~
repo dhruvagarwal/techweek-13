@@ -1176,7 +1176,7 @@ color:white;
 #iconn:hover
 {
 /*background-color:whitesmoke;*/
-opacity:0.5;
+opacity:1.5;
 -webkit-transition-duration: 0.5s;
    -moz-transition-duration: 0.5s;
 }
