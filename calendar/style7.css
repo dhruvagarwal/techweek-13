@@ -835,7 +835,7 @@ text-align : center;
 }
 
 /* Close Button */
-.opened .screensht .close {
+.opened .screensht .closep {
   position:absolute;
   top:7px;
   right:7px;
@@ -870,7 +870,7 @@ text-align : center;
   bottom:0px;
 }
 
-.opened .screensht .col1:hover .close,.opened .screensht .col2:hover .close {
+.opened .screensht .col1:hover .closep,.opened .screensht .col2:hover .closep {
   visibility:visible;
   opacity:1;
 }
