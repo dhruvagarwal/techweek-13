@@ -69,6 +69,15 @@
                     $(document).keyup(function(e) {
 
 						  					if (e.keyCode == 27) { $('.window').hide(); }   // esc
+						  					if (e.keyCode == 13) { 
+						  					document.getElementById("the_lights").style.display="block";
+			                        $("#the_lights").fadeTo("slow",0);
+											 $("#startbar").fadeIn();
+                      				 $(".calget").fadeIn();
+                      				 $(".opened.tunggal").hide();
+                      				 $(".icons").fadeIn();
+						 					 $("#login").hide(); 
+						 					 }   // enter
 							});
                });
           </script>
