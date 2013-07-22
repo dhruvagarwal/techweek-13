@@ -1,8 +1,21 @@
 <html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
 <head>
+<meta charset="utf-8">
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+  <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>Techweek'13</title>
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width">
+<script type="text/javascript" src="js/prefixfree.min.js"></script>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
 <title>Techweek'13</title>
 <link type="text/css" rel="stylesheet" href="style7.css">
+<link type="text/css" rel="stylesheet" href="css/explorer.css">
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3/jquery.min.js"></script>
           <script>
 				
@@ -46,31 +59,42 @@
                     
                     $(".menu_0").dblclick(function(){
 											$(".window").show();
-											$(".opened.tunggal").show();                
+											$(".opened.tunggal").show();
+                                            $(".calget").hide();											
                                 
                     });
                     $(".menu_1").dblclick(function(){
 											$(".window").show();        
-											$(".opened.tunggal").show();        
+											$(".opened.tunggal").show(); 
+                                            $(".calget").hide();											
                                 
                     });
                     $(".close").click(function(){
                     					$(".window").hide();
+										$(".calget").show();
                     					$(".opened.tunggal").hide();
                     });
                     $(".opened.tunggal").click(function(){
                     					$(".window").toggle();});
                     $(".min").click(function(){
-                    					$(".window").hide();});
-                    $(".opened.tunggal.screensht.col1.fold.close").click(function(){
                     					$(".window").hide();
-                    					$(".opened.tunggal").hide();
+										$(".calget").show();});
+                    $(".opened.tunggal.screensht.col1.fold.close").click(function(){
+                    					
+										$(".window").hide();
+                    					$(".calget").show();
+										$(".opened.tunggal").hide();
                     });
                     $(document).keyup(function(e) {
 
 						  					if (e.keyCode == 27) { $('.window').hide(); }   // esc
 							});
+					 $( ".window" ).draggable();		
                });
+			   
+    
+   
+  
           </script>
 <script type="text/javascript">
                 function updateClock(){
@@ -286,6 +310,7 @@
 					</div>
 				</div>
 </div>
+
 <div class="icons">
 <ul class="menu_0" type="none">
 <li> <div id="iconn" style="background-image:url('icons/flash.jpg');"> <p style="position:relative; top:110%; left:20%;"> Flash </p> </div> </li> <br> <br> <br>
@@ -303,6 +328,7 @@
 <li> <div id="iconn" style="background-image:url('icons/html.jpg'); width:4.5em; background-size:4.5em 3em;"> <p style="left:-5%;"> Web_Development </p> </div> </li> <br> <br> <br>
 
 </ul>
+<<<<<<< HEAD
 </div>
 
 <div class="window">
@@ -324,7 +350,114 @@ SIG name
 </div>
 </div>
 
+=======
+>>>>>>> 7824d762662403ae71dd361f2f5bf156b3dd8b80
 </div>
+<div class="window">
+        		<div class="wcmd">
+					<a class="min">-</a>
+					<a class="max">&#9633;</a>
+					<a class="close">&#10006;</a>
+				</div>
+				<br />
+				<div class="c"></div>
+				<div class="wnav">
+					<div class="arrow-wrap">
+						<div class="back">&#10140;</div>
+						<div class="next">&#10140;</div>
+						<div class="ltry">&#9660;</div>
+
+					</div>
+					<div class="address">
+						<div class="mycomicon"><img src="img/myc.png" /></div>
+						<div class="rtry">&#9658;</div>
+						<div class="ctext">
+						Computer</div>
+						<div class="rtry">&#9658;</div>
+						<div class="ref"><img src="img/ref.png" /></div>
+					</div>
+					<input type="text" class="search" placeholder="Search Computer" />
+				</div>
+                <div class="c"></div>
+				<div class="con-wrap">
+					<div class="side">
+						<ul>
+							<li class="fav">Favorites
+								<ul>
+									<li class="desk">Desktop</li>
+									<li class="down">Downloads</li>
+									<li class="rece">Recent Places</li>
+								</ul>
+							</li>
+							<li class="lib">Libraries
+								<ul>
+									<li class="docu">Documents</li>
+									<li class="musi">Music</li>
+									<li class="pict">Pictures</li>
+									<li class="vide">Videos</li>
+								</ul>
+							</li>
+							<li class="homeg">Homegroup</li>
+							<li class="com">Computer
+ 							    <ul>
+									<li class="wind">Local Disk(C:)</li>
+									<li class="driv">Local Disk(D:)</li>
+									<li class="driv">Local Disk(E:)</li>
+									<li class="driv">Local Disk(F:)</li>
+								</ul>
+							</li>
+							<li class="net">Network</li>
+						</ul>
+					</div>
+					<div class="cont">
+						<p>Hard Disk Drives(4)<span></span></p>
+						<div class="disk-box win-disk-box">
+							<label>Local Disk(C:)</label>
+							<div class="bar">
+								<div class="bar-fill"></div>
+							</div>
+							<span class="info">35 GB free of 97 GB</span>
+						</div>
+						<div class="disk-box">
+							<label>Local Disk(D:)</label>
+							<div class="bar">
+								<div class="bar-fill" style="width:45%;"></div>
+							</div>
+							<span class="info">135 GB free of 300 GB</span>
+						</div>
+						<div class="disk-box">
+							<label>Local Disk(E:)</label>
+							<div class="bar">
+								<div class="bar-fill" style="width:41%;"></div>
+							</div>
+							<span class="info">125 GB free of 300 GB</span>
+						</div>
+						<div class="disk-box">
+							<label>Local Disk(F:)</label>
+							<div class="bar">
+								<div class="bar-fill" style="width:66%;"></div>
+							</div>
+							<span class="info">200 GB free of 300 GB</span>
+						</div>
+						<div class="c"></div>
+						<p>Device with removable storage(1)<span style="width: 62%;"></span></p>
+						<div class="disk-box dvd">
+							<br />
+							<label>DVD RW Drive(G:)</label>
+						</div>
+					</div>
+					<div class="c"></div>
+					<div class="foot">
+						<img src="img/myc52.png" />
+						<b>ARAVIND</b>
+						<label><i>Workdgroup:</i>TECHUMBER</label>
+						<label><i>Memory:</i>6.00 GB</label><br />
+						<label style="margin-left: 87px;"><i>Processor:</i>AMD A8-4500M APU With..</label>
+
+					</div>
+				</div>
+
+        	</div>
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>

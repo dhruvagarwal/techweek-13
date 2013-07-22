@@ -8,8 +8,17 @@
 body {
   background-size: 100% 100%;   
   display:block;
+<<<<<<< HEAD
   background-image: url('images/back.jpg');
   background-repeat: no-repeat;
+=======
+  background:-webkit-radial-gradient(bottom,circle,#FACF0C,#4BB648);
+  background:-moz-radial-gradient(bottom,circle,#FACF0C,#4BB648);
+  background:-ms-radial-gradient(bottom,circle,#FACF0C,#4BB648);
+  background:-o-radial-gradient(bottom,circle,#FACF0C,#4BB648);
+  background:radial-gradient(bottom,circle,#FACF0C,#4BB648);
+  overflow : hidden;
+>>>>>>> 7824d762662403ae71dd361f2f5bf156b3dd8b80
 }
 
 a {
@@ -134,11 +143,11 @@ text-align : center;
 
 /*Calendar*/
 .calget
-{
-	height : 30%;
-	width : 30%;
-	float: right;
-	margin-right: 3.5%;
+{   position : absolute;
+    left :60%;
+	
+	
+	
 }
 
 			   
