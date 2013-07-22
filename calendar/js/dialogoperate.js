@@ -221,8 +221,15 @@ $(document).ready(function(){
     $(".close").click(function(){
     			$(this).parent().parent().hide();
     			$(".opened.tunggal").hide();
+				});
+    
+	$(".closep").click(function(){
+    			$(this).parent().parent().hide();
+    			$(".opened.tunggal").hide();
+				$(this).parent().parent().show();
                 });
-                    
+    
+	
     $(".min").click(function(){
       			$(this).parent().parent().hide();});
                    
