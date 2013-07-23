@@ -6,7 +6,19 @@ $('#event5').hide();
 $('#event6').hide();
 $('#event7').hide();
 $('#event8').hide();
-
+$(function(){
+	$('.calget').draggable();
+	$('.flash').draggable();
+	$('.dip').draggable();
+	$('.anim').draggable();
+	$('.prog').draggable();
+	$('.design').draggable();
+	$('.robo').draggable();
+	$('.autocad').draggable();
+	$('.webd').draggable();
+})
+   
+  
 $(document).ready(function(){
 	$('.flash').dblclick(function(){
 		$('#event1').show();
@@ -25,6 +37,7 @@ $(document).ready(function(){
 		$('#tung7').hide();
 		$('#event8').hide();
 		$('#tung8').hide();
+		$('#event1').draggable();
 
 	});
 
@@ -45,6 +58,7 @@ $(document).ready(function(){
 		$('#tung7').hide();
 		$('#event8').hide();
 		$('#tung8').hide();
+		$('#event2').draggable();
 	});
 
 	$('.prog').dblclick(function(){
@@ -64,6 +78,7 @@ $(document).ready(function(){
 		$('#tung7').hide();
 		$('#event8').hide();
 		$('#tung8').hide();
+		$('#event3').draggable();
 	});
 
 	$('.design').dblclick(function(){
@@ -83,6 +98,7 @@ $(document).ready(function(){
 		$('#tung7').hide();
 		$('#event8').hide();
 		$('#tung8').hide();
+		$('#event4').draggable();
 	});
 
 	$('.autocad').dblclick(function(){
@@ -102,6 +118,7 @@ $(document).ready(function(){
 		$('#tung7').hide();
 		$('#event8').hide();
 		$('#tung8').hide();
+		$('#event5').draggable();
 	});
 
 	$('.robo').dblclick(function(){
@@ -121,6 +138,7 @@ $(document).ready(function(){
 		$('#tung7').hide();
 		$('#event8').hide();
 		$('#tung8').hide();
+		$('#event6').draggable();
 	});
 
 	$('.dip').dblclick(function(){
@@ -140,6 +158,7 @@ $(document).ready(function(){
 		$('#tung7').show();
 		$('#event8').hide();
 		$('#tung8').hide();
+		$('#event7').draggable();
 	});
 
 	$('.webd').dblclick(function(){
@@ -159,6 +178,7 @@ $(document).ready(function(){
 		$('#tung7').hide();
 		$('#event8').show();
 		$('#tung8').show();
+		$('#event8').draggable();
 	});
 
 	$("#tung1").click(function(){
@@ -246,5 +266,6 @@ $(document).ready(function(){
 						 	$("#login").hide(); 
 						 	}   // enter
 						});
+
 
 });
