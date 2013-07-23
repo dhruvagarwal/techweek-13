@@ -41,6 +41,27 @@ $(document).ready(function(){
 
 	});
 
+	$('.flashmenu').click(function(){
+		$('#event1').show();
+		$('#tung1').show();
+		$('#event2').hide();
+		$('#tung2').hide();
+		$('#event3').hide();
+		$('#tung3').hide();
+		$('#event4').hide();
+		$('#tung4').hide();
+		$('#event5').hide();
+		$('#tung5').hide();
+		$('#event6').hide();
+		$('#tung6').hide();
+		$('#event7').hide();
+		$('#tung7').hide();
+		$('#event8').hide();
+		$('#tung8').hide();
+		$('#event1').draggable();
+
+	});
+
 	$('.anim').dblclick(function(){
 		$('#event1').hide();
 		$('#tung1').hide();
@@ -60,6 +81,27 @@ $(document).ready(function(){
 		$('#tung8').hide();
 		$('#event2').draggable();
 	});
+
+	$('.animmenu').click(function(){
+		$('#event1').hide();
+		$('#tung1').hide();
+		$('#event2').show();
+		$('#tung2').show();
+		$('#event3').hide();
+		$('#tung3').hide();
+		$('#event4').hide();
+		$('#tung4').hide();
+		$('#event5').hide();
+		$('#tung5').hide();
+		$('#event6').hide();
+		$('#tung6').hide();
+		$('#event7').hide();
+		$('#tung7').hide();
+		$('#event8').hide();
+		$('#tung8').hide();
+		$('#event2').draggable();
+	});
+
 
 	$('.prog').dblclick(function(){
 		$('#event1').hide();
@@ -81,7 +123,48 @@ $(document).ready(function(){
 		$('#event3').draggable();
 	});
 
+	$('.progmenu').click(function(){
+		$('#event1').hide();
+		$('#tung1').hide();
+		$('#event2').hide();
+		$('#tung2').hide();
+		$('#event3').show();
+		$('#tung3').show();
+		$('#event4').hide();
+		$('#tung4').hide();
+		$('#event5').hide();
+		$('#tung5').hide();
+		$('#event6').hide();
+		$('#tung6').hide();
+		$('#event7').hide();
+		$('#tung7').hide();
+		$('#event8').hide();
+		$('#tung8').hide();
+		$('#event3').draggable();
+	});
+
+
 	$('.design').dblclick(function(){
+		$('#event1').hide();
+		$('#tung1').hide();
+		$('#event2').hide();
+		$('#tung2').hide();
+		$('#event3').hide();
+		$('#tung3').hide();
+		$('#event4').show();
+		$('#tung4').show();
+		$('#event5').hide();
+		$('#tung5').hide();
+		$('#event6').hide();
+		$('#tung6').hide();
+		$('#event7').hide();
+		$('#tung7').hide();
+		$('#event8').hide();
+		$('#tung8').hide();
+		$('#event4').draggable();
+	});
+
+	$('.designmenu').click(function(){
 		$('#event1').hide();
 		$('#tung1').hide();
 		$('#event2').hide();
@@ -121,6 +204,26 @@ $(document).ready(function(){
 		$('#event5').draggable();
 	});
 
+	$('.autocadmenu').click(function(){
+		$('#event1').hide();
+		$('#tung1').hide();
+		$('#event2').hide();
+		$('#tung2').hide();
+		$('#event3').hide();
+		$('#tung3').hide();
+		$('#event4').hide();
+		$('#tung4').hide();
+		$('#event5').show();
+		$('#tung5').show();
+		$('#event6').hide();
+		$('#tung6').hide();
+		$('#event7').hide();
+		$('#tung7').hide();
+		$('#event8').hide();
+		$('#tung8').hide();
+		$('#event5').draggable();
+	});
+
 	$('.robo').dblclick(function(){
 		$('#event1').hide();
 		$('#tung1').hide();
@@ -140,6 +243,27 @@ $(document).ready(function(){
 		$('#tung8').hide();
 		$('#event6').draggable();
 	});
+
+	$('.robomenu').click(function(){
+		$('#event1').hide();
+		$('#tung1').hide();
+		$('#event2').hide();
+		$('#tung2').hide();
+		$('#event3').hide();
+		$('#tung3').hide();
+		$('#event4').hide();
+		$('#tung4').hide();
+		$('#event5').hide();
+		$('#tung5').hide();
+		$('#event6').show();
+		$('#tung6').show();
+		$('#event7').hide();
+		$('#tung7').hide();
+		$('#event8').hide();
+		$('#tung8').hide();
+		$('#event6').draggable();
+	});
+
 
 	$('.dip').dblclick(function(){
 		$('#event1').hide();
@@ -161,7 +285,48 @@ $(document).ready(function(){
 		$('#event7').draggable();
 	});
 
+	$('.dipmenu').click(function(){
+		$('#event1').hide();
+		$('#tung1').hide();
+		$('#event2').hide();
+		$('#tung2').hide();
+		$('#event3').hide();
+		$('#tung3').hide();
+		$('#event4').hide();
+		$('#tung4').hide();
+		$('#event5').hide();
+		$('#tung5').hide();
+		$('#event6').hide();
+		$('#tung6').hide();
+		$('#event7').show();
+		$('#tung7').show();
+		$('#event8').hide();
+		$('#tung8').hide();
+		$('#event7').draggable();
+	});
+
+
 	$('.webd').dblclick(function(){
+		$('#event1').hide();
+		$('#tung1').hide();
+		$('#event2').hide();
+		$('#tung2').hide();
+		$('#event3').hide();
+		$('#tung3').hide();
+		$('#event4').hide();
+		$('#tung4').hide();
+		$('#event5').hide();
+		$('#tung5').hide();
+		$('#event6').hide();
+		$('#tung6').hide();
+		$('#event7').hide();
+		$('#tung7').hide();
+		$('#event8').show();
+		$('#tung8').show();
+		$('#event8').draggable();
+	});
+
+	$('.webdmenu').click(function(){
 		$('#event1').hide();
 		$('#tung1').hide();
 		$('#event2').hide();
@@ -269,3 +434,5 @@ $(document).ready(function(){
 
 
 });
+
+
