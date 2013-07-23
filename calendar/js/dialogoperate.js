@@ -417,6 +417,25 @@ $(document).ready(function(){
 	
     $(".min").click(function(){
       			$(this).parent().parent().hide();});
+
+     $("#refresh").click(function(){
+     	
+     	location.reload(true);
+     });
+    $(document).click(function() {
+        $('#rite').hide();
+    });
+
+    $(document).bind("contextmenu", function(e) {
+
+    $('#rite').css({
+        top: e.pageY+'px',
+        left: e.pageX+'px'
+    }).show();
+
+    return false;
+
+});
                    
     $(document).keyup(function(e) {
 
