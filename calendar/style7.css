@@ -84,6 +84,11 @@ text-align : center;
   text-align:center;
     background-color: #759ae9;
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #759ae9), color-stop(50%, #376fe0), color-stop(50%, #1a5ad9), color-stop(100%, #2463de));
+  background-image: -o-gradient(linear, left top, left bottom, color-stop(0%, #759ae9), color-stop(50%, #376fe0), color-stop(50%, #1a5ad9), color-stop(100%, #2463de));
+  background-image: -moz-gradient(linear, left top, left bottom, color-stop(0%, #759ae9), color-stop(50%, #376fe0), color-stop(50%, #1a5ad9), color-stop(100%, #2463de));
+  background-image: -ms-gradient(linear, left top, left bottom, color-stop(0%, #759ae9), color-stop(50%, #376fe0), color-stop(50%, #1a5ad9), color-stop(100%, #2463de));
+  background-image: gradient(linear, left top, left bottom, color-stop(0%, #759ae9), color-stop(50%, #376fe0), color-stop(50%, #1a5ad9), color-stop(100%, #2463de));
+  
   background-image: -webkit-linear-gradient(top, #759ae9 0%, #376fe0 50%, #1a5ad9 50%, #2463de 100%);
   background-image: -moz-linear-gradient(top, #759ae9 0%, #376fe0 50%, #1a5ad9 50%, #2463de 100%);
   background-image: -ms-linear-gradient(top, #759ae9 0%, #376fe0 50%, #1a5ad9 50%, #2463de 100%);
@@ -109,6 +114,12 @@ text-align : center;
 #login .button:hover {
     background-color: #5d89e8;
     background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #5d89e8), color-stop(50%, #2261e0), color-stop(50%, #044bd9), color-stop(100%, #0d53de));
+	background-image: -moz-gradient(linear, left top, left bottom, color-stop(0%, #5d89e8), color-stop(50%, #2261e0), color-stop(50%, #044bd9), color-stop(100%, #0d53de));
+	background-image: -o-gradient(linear, left top, left bottom, color-stop(0%, #5d89e8), color-stop(50%, #2261e0), color-stop(50%, #044bd9), color-stop(100%, #0d53de));
+	background-image: -ms-gradient(linear, left top, left bottom, color-stop(0%, #5d89e8), color-stop(50%, #2261e0), color-stop(50%, #044bd9), color-stop(100%, #0d53de));
+	background-image: gradient(linear, left top, left bottom, color-stop(0%, #5d89e8), color-stop(50%, #2261e0), color-stop(50%, #044bd9), color-stop(100%, #0d53de));	
+	
+	
     background-image: -webkit-linear-gradient(top, #5d89e8 0%, #2261e0 50%, #044bd9 50%, #0d53de 100%);
     background-image: -moz-linear-gradient(top, #5d89e8 0%, #2261e0 50%, #044bd9 50%, #0d53de 100%);
     background-image: -ms-linear-gradient(top, #5d89e8 0%, #2261e0 50%, #044bd9 50%, #0d53de 100%);
@@ -654,6 +665,7 @@ text-align : center;
   -moz-box-shadow:0 0 1px rgba(255,255,255,0.4),inset 0 0 1px rgba(255,255,255,0.8);
   box-shadow:0 0 1px rgba(255,255,255,0.4),inset 0 0 1px rgba(255,255,255,0.8);
   -webkit-border-radius:4px;
+  -o-border-radius:4px;
   -moz-border-radius:4px;
   border-radius:4px;
 }
@@ -675,6 +687,7 @@ text-align : center;
   border:1px solid #111;
   margin-bottom:12px;
   -webkit-box-shadow:0 0 1px rgba(255,255,255,0.4),inset 0 0 2px rgba(255,255,255,0.8);
+  -o-box-shadow:0 0 1px rgba(255,255,255,0.4),inset 0 0 2px rgba(255,255,255,0.8);
   -moz-box-shadow:0 0 1px rgba(255,255,255,0.4),inset 0 0 2px rgba(255,255,255,0.8);
   box-shadow:0 0 1px rgba(255,255,255,0.4),inset 0 0 2px rgba(255,255,255,0.8);
   -webkit-border-radius:3px;
@@ -686,6 +699,7 @@ text-align : center;
 
 .shutdown:hover {
   -webkit-box-shadow:0 0 1px rgba(255,255,255,0.4),inset 0 0 5px rgba(255,255,255,1);
+  -o-box-shadow:0 0 1px rgba(255,255,255,0.4),inset 0 0 5px rgba(255,255,255,1);
   -moz-box-shadow:0 0 1px rgba(255,255,255,0.4),inset 0 0 5px rgba(255,255,255,1);
   box-shadow:0 0 1px rgba(255,255,255,0.4),inset 0 0 5px rgba(255,255,255,1);
 }
@@ -1183,6 +1197,10 @@ to{-moz-transform:translate(0px, 0px);opacity:1;}
 @-ms-keyframes slow{
 from{-ms-transform:translate(0px, -200px);opacity:0;}
 to{-ms-transform:translate(0px, 0px);opacity:1;}
+}
+@-o-keyframes slow{
+from{-o-transform:translate(0px, -200px);opacity:0;}
+to{-o-transform:translate(0px, 0px);opacity:1;}
 }
 @keyframes slow{
 from{transform:translate(0px, -200px);opacity:0;}
