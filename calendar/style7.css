@@ -1221,10 +1221,10 @@ opacity:0.5;
 
 #glass:hover
 {
-	background-color : rgba(51,204,255,0.3);
+	background-color : rgba(0,0,0,0.3);
 	border-style:solid;
 	border-color:rgba(0,184,245,0.5);
-	border-width:1px;
+	border-width:0px;
 	-webkit-transition-duration: 0.5s;
 	-moz-transition-duration: 0.5s;
 }
