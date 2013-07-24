@@ -370,9 +370,17 @@ $(document).ready(function(){
 	$("#tung8").click(function(){
                     					$("#event8").toggle().preventDefault();});
 
-	$("#the_lights").fadeTo(1,0);
+
                     
-	$("#login").hide();
+	
+	                document.getElementById("the_lights").style.display="block";
+                $("#the_lights").fadeTo("slow",0.8);
+				$("#startbar").hide();
+ 			    $("#login").show();
+				$(".calget").hide();
+				$(".window").hide();
+				$(".icons").hide();
+
 	$(".window").hide();
 	$(".opened.tunggal").hide();
 	$("#turnoff").click(function () {
