@@ -8,9 +8,9 @@
 
 body {
   background:#fff;
-  height:110%;
+  height:100%;
   display:block;
-  background:-webkit-radial-gradient(bottom,circle,#FACF0C,#4BB640);
+  background:-webkit-radial-gradient(bottom,circle,#FACF0C,#4BB648);
   background:-moz-radial-gradient(bottom,circle,#FACF0C,#4BB648);
   background:-ms-radial-gradient(bottom,circle,#FACF0C,#4BB648);
   background:-o-radial-gradient(bottom,circle,#FACF0C,#4BB648);
@@ -166,6 +166,7 @@ text-align : center;
 	width : 30%;
 	float: right;
 	margin-right: 3.5%;
+  margin-bottom: 30%;
 }
 
 			   
