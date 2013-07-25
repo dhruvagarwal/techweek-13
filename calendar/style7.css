@@ -8,7 +8,8 @@
 
 body {
   background:#fff;
-  height:43em;
+  height:55em;
+
   display:block;
   background:-webkit-radial-gradient(bottom,circle,#FACF0C,#4BB648);
   background:-moz-radial-gradient(bottom,circle,#FACF0C,#4BB648);
@@ -165,16 +166,12 @@ text-align : center;
 	height : 42em;
 	width : 30em;
 	float: right;
-<<<<<<< HEAD
   margin-top: -1.5%;
 	margin-right: 5.5%;
   margin-bottom: 30%;
-
-=======
 	margin-right: -0.5em;
 	margin-bottom:0em;
 	margin-top:-4.5em;
->>>>>>> 7ecc230cb68d7363e41ee8eeed1e6eeae48089be
 }
 
 			   
