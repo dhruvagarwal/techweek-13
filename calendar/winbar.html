@@ -16,7 +16,7 @@
 <script>
 $(document).ready( function() {
 	
-	
+	$('#main').removeClass('hidden');
 	$('body').jpreLoader({
 		loaderVPos: '60%',
 		autoClose: false,
@@ -61,6 +61,7 @@ $(document).ready( function() {
 
 </head>
 <body>
+<div id="main" class="hidden">
 <div id="rite">
 	<ul>
 		<li><a href=".">Refresh</a></li>
@@ -488,7 +489,7 @@ Web Development
 </div>
 
 </div>
-
+</div>
 		<script src="js/dialogoperate.js"></script>
 		<script src="js/jquery.bookblock.js"></script>
 		<script>
