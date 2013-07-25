@@ -7,7 +7,7 @@ $('#event6').hide();
 $('#event7').hide();
 $('#event8').hide();
 $(function(){
-	$('.calget').draggable({containment:$('.calget').parent()});
+	$('.calget').draggable({containment:$('.calget').parent().parent()});
 	$('.flash').draggable({containment:$('.flash').parent().parent()});
 	$('.dip').draggable({containment:$('.dip').parent().parent()});
 	$('.anim').draggable({containment:$('.anim').parent().parent()});
