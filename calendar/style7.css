@@ -37,6 +37,14 @@ a:hover {
   
 }
 
+/*Hide Div*/
+.hidden
+{
+	background-color:#000;
+	display : none;
+}
+/*End Hide*/
+
 /*Login*/
 
 #login{
