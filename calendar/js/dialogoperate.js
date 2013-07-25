@@ -7,15 +7,15 @@ $('#event6').hide();
 $('#event7').hide();
 $('#event8').hide();
 $(function(){
-	$('.calget').draggable({containment:$('.calget').parent().parent()});
-	$('.flash').draggable({containment:$('.flash').parent().parent()});
-	$('.dip').draggable({containment:$('.dip').parent().parent()});
-	$('.anim').draggable({containment:$('.anim').parent().parent()});
-	$('.prog').draggable({containment:$('.prog').parent().parent()});
-	$('.design').draggable({containment:$('.design').parent().parent()});
-	$('.robo').draggable({containment:$('.robo').parent().parent()});
-	$('.autocad').draggable({containment:$('.autocad').parent().parent()});
-	$('.webd').draggable({containment:$('.webd').parent().parent()});
+	$('.calget').draggable({containment:$('.calget').parent().parent().parent()});
+	$('.flash').draggable({containment:$('.flash').parent().parent().parent()});
+	$('.dip').draggable({containment:$('.dip').parent().parent().parent()});
+	$('.anim').draggable({containment:$('.anim').parent().parent().parent()});
+	$('.prog').draggable({containment:$('.prog').parent().parent().parent()});
+	$('.design').draggable({containment:$('.design').parent().parent().parent()});
+	$('.robo').draggable({containment:$('.robo').parent().parent().parent()});
+	$('.autocad').draggable({containment:$('.autocad').parent().parent().parent()});
+	$('.webd').draggable({containment:$('.webd').parent().parent().parent()});
 })
    
   
