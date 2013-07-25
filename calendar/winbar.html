@@ -6,8 +6,27 @@
 <title>Techweek'13</title>
 <link type="text/css" rel="stylesheet" href="style7.css" >
 <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" >
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3/jquery.min.js" ></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 <script type="text/javascript" src="js/modernizr.custom.js" ></script>
+
+<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+<link rel="stylesheet" href="css/jpreloader.css" />
+<script src="js/vendor.js"></script>
+<script src="js/jpreloader.min.js"></script>
+<script>
+$(document).ready( function() {
+	
+	
+	$('body').jpreLoader({
+		loaderVPos: '60%',
+		autoClose: false,
+		closeBtnText: "Login",
+	});
+	
+});
+</script>
+
+
 
 <script type="text/javascript">
                 function updateClock(){
@@ -470,7 +489,6 @@ Web Development
 
 </div>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 		<script src="js/dialogoperate.js"></script>
 		<script src="js/jquery.bookblock.js"></script>
 		<script>
@@ -534,8 +552,7 @@ Web Development
 		<script>
 				Page.init();
 		</script>
-		<script src="js/dialogoperate.js"></script>
-		<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
 
 </body>
 
+</html>
