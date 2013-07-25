@@ -373,8 +373,11 @@ $(document).ready(function(){
 
                     
 	
-	                
-				$("#login").hide();
+	                $("#startbar").hide();
+ 			    
+				$(".calget").hide();
+				$(".window").hide();
+				$(".icons").hide();$("#login").show();
 				
 	$(".opened.tunggal").hide();
 	$("#turnoff").click(function () {
