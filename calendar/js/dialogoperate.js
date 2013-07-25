@@ -373,15 +373,9 @@ $(document).ready(function(){
 
                     
 	
-	                document.getElementById("the_lights").style.display="block";
-                $("#the_lights").fadeTo("slow",0.8);
-				$("#startbar").hide();
- 			    $("#login").show();
-				$(".calget").hide();
-				$(".window").hide();
-				$(".icons").hide();
-
-	$(".window").hide();
+	                
+				$("#login").hide();
+				
 	$(".opened.tunggal").hide();
 	$("#turnoff").click(function () {
                 $("#the_lights").css({'display' : 'block'});
