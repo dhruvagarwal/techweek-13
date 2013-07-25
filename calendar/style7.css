@@ -8,11 +8,7 @@
 
 body {
   background:#fff;
-<<<<<<< HEAD
-  height:100%;
-=======
   height:43em;
->>>>>>> 7ecc230cb68d7363e41ee8eeed1e6eeae48089be
   display:block;
   background:-webkit-radial-gradient(bottom,circle,#FACF0C,#4BB648);
   background:-moz-radial-gradient(bottom,circle,#FACF0C,#4BB648);
@@ -1285,11 +1281,8 @@ border: 1px solid #ddd;
 border: solid 1px #102a3e;
 overflow: visible;
 display: inline-block;
-<<<<<<< HEAD
 margin: 0 2em 0 5em;
-=======
 margin: 0em 0em 3em 2em;  /*top right bottom left, remember using consonants in "trouble"*/
->>>>>>> 7ecc230cb68d7363e41ee8eeed1e6eeae48089be
 border-radius: 5px;
 position: relative;
 box-shadow: inset 0 0 1px #fff;
