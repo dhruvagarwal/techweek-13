@@ -7,15 +7,15 @@ $('#event6').hide();
 $('#event7').hide();
 $('#event8').hide();
 $(function(){
-	$('.calget').draggable();
-	$('.flash').draggable();
-	$('.dip').draggable();
-	$('.anim').draggable();
-	$('.prog').draggable();
-	$('.design').draggable();
-	$('.robo').draggable();
-	$('.autocad').draggable();
-	$('.webd').draggable();
+	$('.calget').draggable({containment:$('.calget').parent().parent()});
+	$('.flash').draggable({containment:$('.flash').parent().parent()});
+	$('.dip').draggable({containment:$('.dip').parent().parent()});
+	$('.anim').draggable({containment:$('.anim').parent().parent()});
+	$('.prog').draggable({containment:$('.prog').parent().parent()});
+	$('.design').draggable({containment:$('.design').parent().parent()});
+	$('.robo').draggable({containment:$('.robo').parent().parent()});
+	$('.autocad').draggable({containment:$('.autocad').parent().parent()});
+	$('.webd').draggable({containment:$('.webd').parent().parent()});
 })
    
   
@@ -37,7 +37,7 @@ $(document).ready(function(){
 		$('#tung7').hide();
 		$('#event8').hide();
 		$('#tung8').hide();
-		$('#event1').draggable();
+		$('#event1').draggable({containment:$('#event1').parent().parent()});
 
 	});
 
@@ -58,7 +58,7 @@ $(document).ready(function(){
 		$('#tung7').hide();
 		$('#event8').hide();
 		$('#tung8').hide();
-		$('#event1').draggable();
+		$('#event1').draggable({containment:$('#event1').parent().parent()});
 
 	});
 
@@ -79,7 +79,7 @@ $(document).ready(function(){
 		$('#tung7').hide();
 		$('#event8').hide();
 		$('#tung8').hide();
-		$('#event2').draggable();
+		$('#event2').draggable({containment:$('#event2').parent().parent()});
 	});
 
 	$('.animmenu').click(function(){
@@ -99,7 +99,7 @@ $(document).ready(function(){
 		$('#tung7').hide();
 		$('#event8').hide();
 		$('#tung8').hide();
-		$('#event2').draggable();
+		$('#event2').draggable({containment:$('#event2').parent().parent()});
 	});
 
 
@@ -120,7 +120,7 @@ $(document).ready(function(){
 		$('#tung7').hide();
 		$('#event8').hide();
 		$('#tung8').hide();
-		$('#event3').draggable();
+		$('#event3').draggable({containment:$('#event3').parent().parent()});
 	});
 
 	$('.progmenu').click(function(){
@@ -140,7 +140,7 @@ $(document).ready(function(){
 		$('#tung7').hide();
 		$('#event8').hide();
 		$('#tung8').hide();
-		$('#event3').draggable();
+		$('#event3').draggable({containment:$('#event3').parent().parent()});
 	});
 
 
@@ -161,7 +161,7 @@ $(document).ready(function(){
 		$('#tung7').hide();
 		$('#event8').hide();
 		$('#tung8').hide();
-		$('#event4').draggable();
+		$('#event4').draggable({containment:$('#event4').parent().parent()});
 	});
 
 	$('.designmenu').click(function(){
@@ -181,7 +181,7 @@ $(document).ready(function(){
 		$('#tung7').hide();
 		$('#event8').hide();
 		$('#tung8').hide();
-		$('#event4').draggable();
+		$('#event4').draggable({containment:$('#event4').parent().parent()});
 	});
 
 	$('.autocad').dblclick(function(){
@@ -201,7 +201,7 @@ $(document).ready(function(){
 		$('#tung7').hide();
 		$('#event8').hide();
 		$('#tung8').hide();
-		$('#event5').draggable();
+		$('#event5').draggable({containment:$('#event5').parent().parent()});
 	});
 
 	$('.autocadmenu').click(function(){
@@ -221,7 +221,7 @@ $(document).ready(function(){
 		$('#tung7').hide();
 		$('#event8').hide();
 		$('#tung8').hide();
-		$('#event5').draggable();
+		$('#event5').draggable({containment:$('#event5').parent().parent()});
 	});
 
 	$('.robo').dblclick(function(){
@@ -241,7 +241,7 @@ $(document).ready(function(){
 		$('#tung7').hide();
 		$('#event8').hide();
 		$('#tung8').hide();
-		$('#event6').draggable();
+		$('#event6').draggable({containment:$('#event6').parent().parent()});
 	});
 
 	$('.robomenu').click(function(){
@@ -261,7 +261,7 @@ $(document).ready(function(){
 		$('#tung7').hide();
 		$('#event8').hide();
 		$('#tung8').hide();
-		$('#event6').draggable();
+		$('#event6').draggable({containment:$('#event6').parent().parent()});
 	});
 
 
@@ -282,7 +282,7 @@ $(document).ready(function(){
 		$('#tung7').show();
 		$('#event8').hide();
 		$('#tung8').hide();
-		$('#event7').draggable();
+		$('#event7').draggable({containment:$('#event7').parent().parent()});
 	});
 
 	$('.dipmenu').click(function(){
@@ -302,7 +302,7 @@ $(document).ready(function(){
 		$('#tung7').show();
 		$('#event8').hide();
 		$('#tung8').hide();
-		$('#event7').draggable();
+		$('#event7').draggable({containment:$('#event7').parent().parent()});
 	});
 
 
@@ -323,7 +323,7 @@ $(document).ready(function(){
 		$('#tung7').hide();
 		$('#event8').show();
 		$('#tung8').show();
-		$('#event8').draggable();
+		$('#event8').draggable({containment:$('#event8').parent().parent()});
 	});
 
 	$('.webdmenu').click(function(){
@@ -343,7 +343,7 @@ $(document).ready(function(){
 		$('#tung7').hide();
 		$('#event8').show();
 		$('#tung8').show();
-		$('#event8').draggable();
+		$('#event8').draggable({containment:$('#event8').parent().parent()});
 	});
 
 	$("#tung1").click(function(){
