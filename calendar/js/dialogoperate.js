@@ -1,4 +1,5 @@
 $('#event1').hide();
+alert('Press F11 for full experience !!');
 $('#event2').hide();
 $('#event3').hide();
 $('#event4').hide();
@@ -16,7 +17,12 @@ $(function(){
 	$('.robo').draggable({containment:$('.robo').parent().parent().parent()});
 	$('.autocad').draggable({containment:$('.autocad').parent().parent().parent()});
 	$('.webd').draggable({containment:$('.webd').parent().parent().parent()});
-})
+	
+	var h = screen.height + 'px';alert(h);
+	$("body").css("height",h);
+	
+
+});
    
   
 $(document).ready(function(){
@@ -373,11 +379,8 @@ $(document).ready(function(){
 
                     
 	
-	                $("#startbar").hide();
- 			    
-				$(".calget").hide();
-				$(".window").hide();
-				$(".icons").hide();$("#login").show();
+	                
+				$("#login").hide();
 				
 	$(".opened.tunggal").hide();
 	$("#turnoff").click(function () {
@@ -458,5 +461,4 @@ $(document).ready(function(){
 
 
 });
-
 
