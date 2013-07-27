@@ -35,9 +35,6 @@
                 }
                 window.setInterval(updateClock, 100);
 				updateClock();
-                
-/////////////
-
 </script>
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
 <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
@@ -48,19 +45,15 @@
 <link rel="stylesheet" type="text/css" href="css/demo2.css" >
 <link rel="stylesheet" type="text/css" href="css/calendar.css" > 
 <script>
- 
-
 (function getLocation()
   {
-  
   if (navigator.geolocation)
-    {
+  {
     navigator.geolocation.getCurrentPosition(function(position)
   { 
-      if (!(position.address.city))
+  if (!(position.address.city))
   {document.getElementById("geoLoc").setAttribute('title',"Latitude: " + position.coords.latitude + 
   "<br>Longitude: " + position.coords.longitude);}
-  
   else
   {
   document.getElementById("geoLoc").setAttribute('title',"You live in " + position.address.city + ", " + position.address.region);
@@ -87,8 +80,6 @@
     }
   else{document.getElementById("geoLoc").setAttribute('title','Geolocation is not supported by this browser.');}
   })();
-
-
 </script>
 </head>
 <body>
