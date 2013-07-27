@@ -36,6 +36,7 @@
                 window.setInterval(updateClock, 100);
 				updateClock();
                 
+/////////////
 
 </script>
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
@@ -46,7 +47,49 @@
 <link rel="stylesheet" type="text/css" href="css/bookblock.css" >
 <link rel="stylesheet" type="text/css" href="css/demo2.css" >
 <link rel="stylesheet" type="text/css" href="css/calendar.css" > 
+<script>
+ 
 
+(function getLocation()
+  {
+  
+  if (navigator.geolocation)
+    {
+    navigator.geolocation.getCurrentPosition(function(position)
+  { 
+      if (!(position.address.city))
+  {document.getElementById("geoLoc").setAttribute('title',"Latitude: " + position.coords.latitude + 
+  "<br>Longitude: " + position.coords.longitude);}
+  
+  else
+  {
+  document.getElementById("geoLoc").setAttribute('title',"You live in " + position.address.city + ", " + position.address.region);
+  }
+  
+  },function (error)
+  {
+  switch(error.code) 
+    {
+    case error.PERMISSION_DENIED:
+      document.getElementById("geoLoc").setAttribute('title',"User denied the request for Geolocation.");
+      break;
+    case error.POSITION_UNAVAILABLE:
+      document.getElementById("geoLoc").setAttribute('title',"Location information is unavailable.");
+      break;
+    case error.TIMEOUT:
+      document.getElementById("geoLoc").setAttribute('title',"The request to get user location timed out.");
+      break;
+    case error.UNKNOWN_ERROR:
+      document.getElementById("geoLoc").setAttribute('title',"An unknown error occurred.");
+      break;
+    }
+  });
+    }
+  else{document.getElementById("geoLoc").setAttribute('title','Geolocation is not supported by this browser.');}
+  })();
+
+
+</script>
 </head>
 <body>
 <div id="rite">
@@ -201,7 +244,7 @@
 			</div>
 		</div> <!-- plus -->
 
-		<div class="connection" title="Local Area Connection"></div>
+		<div class="connection" id="geoLoc"></div>
 		<div class="speker" title="Sound Control"></div>
 		<div class="jam" id="showClock"></div>
 		<div class="clear"></div>
