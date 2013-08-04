@@ -120,6 +120,30 @@ function getLocation()
   else{document.getElementById("geoLoc").setAttribute('title','Geolocation is not supported by this browser.');}
   }
 </script>
+
+<script language="javascript">
+window.onload=autochange;				
+var current,total,t;
+current=0;
+imagearray= new Array("images/autocad.jpg","images/cat.jpeg","images/piano.jpg")
+
+total=imagearray.length;
+function autochange()
+{   
+    
+    current++;
+    if (current==total)
+    current=0;
+    document.day5.src=imagearray[current];
+	
+	t=setTimeout("autochange()",3000)
+}
+
+function pause()
+{
+clearTimeout(t);
+}
+</script>
 </head>
 <body id="bo">
 <div id="main" class="hidden">
@@ -159,8 +183,8 @@ function getLocation()
 							</ul>
 						</div>
 					</li>
-					<li><a href="#"><div class="fleft foldr"></div>About Us</a></li>
-					<li><a href="#"><div class="fleft foldr"></div>Schedule</a></li>
+					<li><a href="#" class="about"><div class="fleft foldr"></div>About Us</a></li>
+					<li><a href="#" class="schd"><div class="fleft foldr"></div>Schedule</a></li>
 					<li><a href="http://www.facebook.com" target="_blank"><div class="fleft op"></div>Facebook Page</a></li>
 					<li><a href="http://www.twitter.com" target="_blank"><div class="fleft ie"></div>Twitter</a></li>
 				</ul>
@@ -201,7 +225,7 @@ function getLocation()
 
 	<div class="opened tunggal" id="tung1"><div class="foldr small"></div>
 	<div class="screensht">
-		<div class="col1 fold">
+		<div class="col1 fold_01">
 		<div class="closep">&times;</div><div class="kotak"></div>
 		</div>
 	</div>
@@ -209,7 +233,7 @@ function getLocation()
 
 	<div class="opened tunggal" id="tung2"><div class="foldr small"></div>
 	<div class="screensht">
-		<div class="col1 fold">
+		<div class="col1 fold_02">
 		<div class="closep">&times;</div><div class="kotak"></div>
 		</div>
 	</div>
@@ -217,7 +241,7 @@ function getLocation()
 
 	<div class="opened tunggal" id="tung3"><div class="foldr small"></div>
 	<div class="screensht">
-		<div class="col1 fold">
+		<div class="col1 fold_03">
 		<div class="closep">&times;</div><div class="kotak"></div>
 		</div>
 	</div>
@@ -225,7 +249,7 @@ function getLocation()
 
 	<div class="opened tunggal" id="tung4"><div class="foldr small"></div>
 	<div class="screensht">
-		<div class="col1 fold">
+		<div class="col1 fold_04">
 		<div class="closep">&times;</div><div class="kotak"></div>
 		</div>
 	</div>
@@ -233,7 +257,7 @@ function getLocation()
 
 	<div class="opened tunggal" id="tung5"><div class="foldr small"></div>
 	<div class="screensht">
-		<div class="col1 fold">
+		<div class="col1 fold_05">
 		<div class="closep">&times;</div><div class="kotak"></div>
 		</div>
 	</div>
@@ -241,7 +265,7 @@ function getLocation()
 
 	<div class="opened tunggal" id="tung6"><div class="foldr small"></div>
 	<div class="screensht">
-		<div class="col1 fold">
+		<div class="col1 fold_06">
 		<div class="closep">&times;</div><div class="kotak"></div>
 		</div>
 	</div>
@@ -249,7 +273,7 @@ function getLocation()
 
 	<div class="opened tunggal" id="tung7"><div class="foldr small"></div>
 	<div class="screensht">
-		<div class="col1 fold">
+		<div class="col1 fold_07">
 		<div class="closep">&times;</div><div class="kotak"></div>
 		</div>
 	</div>
@@ -257,7 +281,23 @@ function getLocation()
 
 	<div class="opened tunggal" id="tung8"><div class="foldr small"></div>
 	<div class="screensht">
-		<div class="col1 fold">
+		<div class="col1 fold_08">
+		<div class="closep">&times;</div><div class="kotak"></div>
+		</div>
+	</div>
+	</div>
+	
+	<div class="opened tunggal" id="tung_about"><div class="foldr small"></div>
+	<div class="screensht">
+		<div class="col1 fold_1">
+		<div class="closep">&times;</div><div class="kotak"></div>
+		</div>
+	</div>
+	</div>
+	
+	<div class="opened tunggal" id="tung_schd"><div class="foldr small"></div>
+	<div class="screensht">
+		<div class="col1 fold_2">
 		<div class="closep">&times;</div><div class="kotak"></div>
 		</div>
 	</div>
@@ -320,7 +360,7 @@ function getLocation()
 							</div>
 						</div>
 						<div class="bb-item" title="August 2013">
-							<img class="bb-custom-img" src="images/autocad.jpg" alt="image05"/>
+							<img class="bb-custom-img" name="day5"src="images/autocad.jpg" alt="image05" onmouseover="pause()" onmouseout="autochange()"/>
 							<div class="fc-calendar-wrap">
 								<h2>Day 5</h2>
 								<div class="fc-calendar-container"><div class="fc-calendar fc-five-rows"><div class="fc-head"><div>M</div><div>T</div><div>W</div><div>Th</div><div>Fr</div><div>Sa</div><div>Su</div></div><div class="fc-body"><div class="fc-row"><div></div><div></div><div></div><div><span class="fc-date">1</span><span class="fc-weekday">Thu</span></div><div><span class="fc-date">2</span><span class="fc-weekday">Fri</span></div><div><span class="fc-date">3</span><span class="fc-weekday">Sat</span></div><div><span class="fc-date">4</span><span class="fc-weekday">Sun</span></div></div><div class="fc-row"><div><span class="fc-date">5</span><span class="fc-weekday">Mon</span></div><div><span class="fc-date">6</span><span class="fc-weekday">Tue</span></div><div><span class="fc-date">7</span><span class="fc-weekday">Wed</span></div><div><span class="fc-date">8</span><span class="fc-weekday">Thu</span></div><div><span class="fc-date">9</span><span class="fc-weekday">Fri</span></div><div><span class="fc-date">10</span><span class="fc-weekday">Sat</span></div><div><span class="fc-date">11</span><span class="fc-weekday">Sun</span></div></div><div class="fc-row"><div><span class="fc-date">12</span><span class="fc-weekday">Mon</span></div><div><span class="fc-date">13</span><span class="fc-weekday">Tue</span></div><div><span class="fc-date">14</span><span class="fc-weekday">Wed</span></div><div><span class="fc-date">15</span><span class="fc-weekday">Thu</span></div><div><span class="fc-date">16</span><span class="fc-weekday">Fri</span></div><div><span class="fc-date">17</span><span class="fc-weekday">Sat</span></div><div><span class="fc-date">18</span><span class="fc-weekday">Sun</span></div></div><div class="fc-row"><div><span class="fc-date">19</span><span class="fc-weekday">Mon</span></div><div><span class="fc-date">20</span><span class="fc-weekday">Tue</span></div><div><span class="fc-date">21</span><span class="fc-weekday">Wed</span></div><div><span class="fc-date">22</span><span class="fc-weekday">Thu</span></div><div><span class="fc-date">23</span><span class="fc-weekday">Fri</span></div><div><span class="fc-date">24</span><span class="fc-weekday">Sat</span></div><div><span class="fc-date">25</span><span class="fc-weekday">Sun</span></div></div><div class="fc-row"><div><span class="fc-date">26</span><span class="fc-weekday">Mon</span></div><div><span class="fc-date">27</span><span class="fc-weekday">Tue</span></div><div><span class="fc-date">28</span><span class="fc-weekday">Wed</span></div><div><span class="fc-date1">29</span><span class="fc-weekday">Thu</span></div><div><span class="fc-date">30</span><span class="fc-weekday">Fri</span></div><div><span class="fc-date">31</span><span class="fc-weekday">Sat</span></div><div></div></div></div></div>
@@ -398,7 +438,7 @@ Venue: Smart Classroom<br>
 "Animation can be used to inspire, educate, inform and entertain while showing the world in a way one did not perceive before". Flash is an ubiquitous, premier web animation tool that eclipses all other tools. It is the head of its class when it comes to using a tool to create interactive applications using minimal time. TECHWEEK brings a fun-filled, extremely intensive and practical workshop which aims to gift the ability to conceive, design and create the world around oneself!</div>
  <div class="foot">
  
- <b>DHRUV</b>
+ <b></b>
  <label><i>Branch:</i>COE</label>
  <label><i>Contact:</i>12345678</label><br>
  <label style="margin-left: 87px;"> <i>Project:</i> Techweek-13 </label>
@@ -422,7 +462,7 @@ Venue:Edusat Hall<br>
 "Energy and Emotion" Imagination at its best. . Animation offers a medium of story-telling and visual entertainment which can bring pleasure and information to people of all ages everywhere in the world. Attend this fascinating workshop & instil life in your thoughts!! Also, find yourself being introduced to the fascinating world of 3D game development!</div> 
  <div class="foot">
  
- <b>DHRUV</b>
+ <b></b>
  <label><i>Branch:</i>COE</label>
  <label><i>Contact:</i>12345678</label><br>
  <label style="margin-left: 87px;"> <i>Project:</i> Techweek-13 </label>
@@ -449,7 +489,7 @@ Venue: Edusat Hall<br>
 This computer programming workshop basically gives a general idea of the basic concepts of C and C++. For newbies venturing into the fascinating world of coding as well as the self-made programmers, this workshop will help develop and enhance programming skills as concepts will be taught from scratch along with questions and puzzles.</div>
  <div class="foot">
  
- <b>DHRUV</b>
+ <b></b>
  <label><i>Branch:</i>COE</label>
  <label><i>Contact:</i>12345678</label><br>
  <label style="margin-left: 87px;"> <i>Project:</i> Techweek-13 </label>
@@ -473,7 +513,7 @@ Venue: Smart Classroom<br>
 Specifically designed for everyone who is interested in the beautiful world of Graphic Designing. Get to know the nuances of making your own personal graphic studios, right from scratch; give a different dimensions to pictures and make posters that amaze everyone. An introduction to Adobe Photoshop, Illustrator, and InDesign!</div>
  <div class="foot">
  
- <b>DHRUV</b>
+ <b></b>
  <label><i>Branch:</i>COE</label>
  <label><i>Contact:</i>12345678</label><br>
  <label style="margin-left: 87px;"> <i>Project:</i> Techweek-13 </label>
@@ -498,7 +538,7 @@ Venue: Edusat Hall<br>
 You now have the power to design ideas in almost any form you can imagine ! Design and shape the world around you with IEEE Techweek's workshop on AutoCAD. The powerful yet flexible AutoCAD software is one of the world's leading 2D and 3D CAD design tools. It is used in making automobile components, mechanical components, draw architectural designs, electrical controls designers etc. This workshop has the potential to maximize your productivity with tools for conceptual design, model documentation, and reality capture.</div>
  <div class="foot">
  
- <b>DHRUV</b>
+ <b></b>
  <label><i>Branch:</i>COE</label>
  <label><i>Contact:</i>12345678</label><br>
  <label style="margin-left: 87px;"> <i>Project:</i> Techweek-13 </label>
@@ -522,7 +562,7 @@ Venue: Edusat Hall<br>
 Our generation has grown up witnessing the Star Wars, fighting and rooting for the Terminators and ooh-aahing at the Wall-Es. If u were one of us who were awed by the Bat-Cycle(well if you have watched the Dark-Knight Rises, that is :P) and have that usual techie's dream to build a robot of his own that would walk, run, stop at the click of a button, then the Game begins here !! At IEEE Techweek witness the design, construction, operation and application of robots and robotic equipment. Encompassing the sciences of electronics, mechanics and software, the Robotics workshop has always been the jewel in Techweek's crown. Welcome here freaks !! Also find youself mesmerized by the fascinating world of Embedded Systems!</div>
  <div class="foot">
  
- <b>DHRUV</b>
+ <b></b>
  <label><i>Branch:</i>COE</label>
  <label><i>Contact:</i>12345678</label><br>
  <label style="margin-left: 87px;"> <i>Project:</i> Techweek-13 </label>
@@ -546,7 +586,7 @@ Venue: Smart Classroom<br>
 The camera can photograph thought. ~ Dirk Bogarde Digital image processing is the use of computer algorithms to perform image processing on digital images e.g the process used in the perception of real life images by robots, line followers, etc. An essential tool in medical imaging, robotics, document analysis, tools and toys, recognizing scenes and fingerprinting, DIP coding and designing will be the core of the workshop. Use MATLAB or MATrix LABoratory, a powerful tool, to implement DIP. An introduction to the same shall be given!</div>
  <div class="foot">
  
- <b>DHRUV</b>
+ <b></b>
  <label><i>Branch:</i>COE</label>
  <label><i>Contact:</i>12345678</label><br>
  <label style="margin-left: 87px;"> <i>Project:</i> Techweek-13 </label>
@@ -570,7 +610,7 @@ Venue: Smart Classroom<br>
 Do the design and working of websites fascinate you? If the answer is yes, then the WEB-D workshop at Techweek is the place to be. From HTML to PHP, from CSS to AJAX, this workshop shall teach you all and answer all your queries. Who knows, your websites could be all over the Internet in no time!</div>
  <div class="foot">
  
- <b>DHRUV</b>
+ <b></b>
  <label><i>Branch:</i>COE</label>
  <label><i>Contact:</i>12345678</label><br>
  <label style="margin-left: 87px;"> <i>Project:</i> Techweek-13 </label>
@@ -578,7 +618,63 @@ Do the design and working of websites fascinate you? If the answer is yes, then 
 </div>
 
 </div>
+
+<div class="window" id ="aboutus">
+About us
+<div class="wcmd">
+ <a href="#" class="min">-</a>
+ <a class="max">&#9633;</a>
+ <a href="#" class="close">&#10006;</a>
 </div>
+<div class="con-wrap">
+<div class="content">
+<h1 style="left:10%;"> ABOUT US </h1> <br> <br> <br>
+<p style="left:10%;">
+Website Design and Development Team: <br>  <br>Dhruv Agarwal<br> Deepankar Anil Kumar <br>Isha Tyagi <br> Shubham Desale <br>Pulkit Tanwar <br> </p> </div>
+ <div class="foot">
+ <b></b>
+ <label><i>Branch:</i>COE</label>
+ <label><i>Contact:</i>12345678</label><br>
+ <label style="margin-left: 87px;"> <i>Project:</i> Techweek-13 </label>
+</div>
+</div>
+
+</div>
+
+<div class="window" id="schedule">
+Schedule
+<div class="wcmd">
+
+ <a href="#" class="min">-</a>
+ <a class="max">&#9633;</a>
+ <a href="#" class="close">&#10006;</a>
+</div>
+<div class="con-wrap" style="overflow:scroll;" >
+<div class="content" > <p style="left:5em; position:relative;"> 
+23rd August (Thursday) <br>
+4pm	   Inauguration	  Exposition hall <br>
+5pm	Flash animation	Smart Classroom <br> <br>
+24th August(Friday) <br>
+4pm	Programming	Edusat Hall <br>
+5pm	Designing	Smart classroom <br><br>
+25th August(Saturday)<br>
+10am-1:30pm	3D Anim + 3D Game Development	Edusat Hall <br>
+2pm-6pm	 Robotics and Embedded systems	Edusat Hall <br> <br>
+27th August (Monday) <br>
+4pm	 Vedic Maths(Workshop by IMS institute)	Smart Classroom <br> <br>
+28th August (Tuesday) <br>
+4pm	Web-Development	Smart Classroom<br>
+5pm	 Solidworks	 Edusat Hall <br><br>
+29th August (Wednesday)<br>
+5pm	 Matlab and Digital Image Processing	Smart Classroom<br>
+4pm	WIE	Exposition Hall <br><br>
+6:30	Valediction	Exposition Hall <br> </div>
+ 
+</div>
+
+</div>
+
+
 		<script src="js/dialogoperate.js"></script>
 		<script src="js/jquery.bookblock.js"></script>
 		<script>

@@ -962,13 +962,85 @@ text-align : center;
   border:1px solid rgba(255,255,255,0.2);
 }
 
-.opened.tunggal .screensht .col1.fold:before {
-  content:"SIG NAME";
+.opened.tunggal .screensht .col1.fold_01:before {
+  content:"Flash";
   position:absolute;
   display:block;
   top:7px;
   left:7px;
 }
+
+.opened.tunggal .screensht .col1.fold_02:before {
+  content:"Animations";
+  position:absolute;
+  display:block;
+  top:7px;
+  left:7px;
+}
+
+.opened.tunggal .screensht .col1.fold_03:before {
+  content:"Programming";
+  position:absolute;
+  display:block;
+  top:7px;
+  left:7px;
+}
+
+.opened.tunggal .screensht .col1.fold_04:before {
+  content:"Design";
+  position:absolute;
+  display:block;
+  top:7px;
+  left:7px;
+}
+
+.opened.tunggal .screensht .col1.fold_05:before {
+  content:"Autocad";
+  position:absolute;
+  display:block;
+  top:7px;
+  left:7px;
+}
+
+.opened.tunggal .screensht .col1.fold_06:before {
+  content:"Robotics";
+  position:absolute;
+  display:block;
+  top:7px;
+  left:7px;
+}
+
+.opened.tunggal .screensht .col1.fold_07:before {
+  content:"DIP";
+  position:absolute;
+  display:block;
+  top:7px;
+  left:7px;
+}
+
+.opened.tunggal .screensht .col1.fold_08:before {
+  content:"WebD";
+  position:absolute;
+  display:block;
+  top:7px;
+  left:7px;
+}
+.opened.tunggal .screensht .col1.fold_1:before {
+  content:"About Us";
+  position:absolute;
+  display:block;
+  top:7px;
+  left:7px;
+}
+
+.opened.tunggal .screensht .col1.fold_2:before {
+  content:"Schedule";
+  position:absolute;
+  display:block;
+  top:7px;
+  left:7px;
+}
+
 
 .opened.tunggal .screensht .col1.ntpad:before {
   content:"I love CSS3";
@@ -1487,5 +1559,22 @@ height: 57px;
 background: #f1f5fb;
 margin: 13.7em auto;
 box-shadow: inset 0px 4px 13px #CCD9EA;
+
+}
+
+#aboutus .foot{
+height: 57px;
+background: #f1f5fb;
+margin: 6.55em auto;
+box-shadow: inset 0px 4px 13px #CCD9EA;
+
+}
+
+#schedule .con-wrap{
+border:solid 1px #102a3e;
+margin:30px auto;
+width: 34em;
+background: #fff;
+height: 23em;
 
 }

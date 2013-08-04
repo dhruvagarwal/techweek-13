@@ -1349,11 +1349,8 @@ font-style: normal;
     width: 100px;
 }
 /*right click menu end*/
-<<<<<<< HEAD
-=======
 
 
->>>>>>> dfb24dd522618779d898fa01525e8870068621e5
 #event1 .foot{
 height: 57px;
 background: #f1f5fb;
@@ -1415,25 +1412,4 @@ background: #f1f5fb;
 margin: 13.7em auto;
 box-shadow: inset 0px 4px 13px #CCD9EA;
 
-<<<<<<< HEAD
 }
-
-#aboutus .foot{
-height: 57px;
-background: #f1f5fb;
-margin: 6.55em auto;
-box-shadow: inset 0px 4px 13px #CCD9EA;
-
-}
-
-#schedule .con-wrap{
-border:solid 1px #102a3e;
-margin:30px auto;
-width: 34em;
-background: #fff;
-height: 23em;
-
-}
-=======
-}
->>>>>>> dfb24dd522618779d898fa01525e8870068621e5
