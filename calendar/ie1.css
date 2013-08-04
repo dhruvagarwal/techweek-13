@@ -1413,3 +1413,20 @@ margin: 13.7em auto;
 box-shadow: inset 0px 4px 13px #CCD9EA;
 
 }
+
+#aboutus .foot{
+height: 57px;
+background: #f1f5fb;
+margin: 6.55em auto;
+box-shadow: inset 0px 4px 13px #CCD9EA;
+
+}
+
+#schedule .con-wrap{
+border:solid 1px #102a3e;
+margin:30px auto;
+width: 34em;
+background: #fff;
+height: 23em;
+
+}
