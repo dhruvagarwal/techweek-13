@@ -14,6 +14,17 @@
 <!--[if IE]>
 	<link rel="stylesheet" type="text/css" href="ie1.css" />
 	<![endif]-->
+
+<script type="text/javascript">
+	function abc(){
+		var txt=document.forms["chk"]["rename"].value;
+	
+		document.getElementById('pre').innerHTML=txt;
+		$('#rename').hide();
+		$('#pre').show();
+	}
+</script>
+
 <script type="text/javascript">
 $(function(){var h = screen.height + 'px';alert(h);
 $("body").css("height",h);});
@@ -66,7 +77,7 @@ $(document).ready( function() {
 </script>
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
 <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-<meta name="author" content="Dhruv">
+<meta name="author" content="Dhruv" >
 <link rel="shortcut icon" href="../favicon.ico"> 
 <link rel="stylesheet" type="text/css" href="css/default.css" >
 <link rel="stylesheet" type="text/css" href="css/bookblock.css" >
@@ -115,6 +126,8 @@ function getLocation()
 <div id="rite">
 	<ul>
 		<li><a href=".">Refresh</a></li>
+		<hr>
+		<li><div id="ren">Rename</div></li>
 	</ul>
 	
 </div>
@@ -359,7 +372,7 @@ function getLocation()
 <center> <img src="images/pane2.jpg" style="height:32%; z-index:-1; width:52%; position:absolute; left:23%; top:30%;"> </center>
 
 <div class="icons">
-<div id="glass" class="flash" style="position:absolute; top:3.5%; left:2.5%;"> <div id="iconn" style="background-image:url('icons/flash.jpg');"> </div> <p> Flash </p> </div>
+<div id="glass" class="flash" style="position:absolute; top:3.5%; left:2.5%;"> <div id="iconn" style="background-image:url('icons/flash.jpg');"> </div> <p id="pre"> Flash </p><form name="chk"><p><input name="rename" id="rename" onblur=abc() size=10></form> </div></p>
 <div id="glass" class="anim" style="position:absolute; top:18.5% ; left:2.5%;"> <div id="iconn" style="background-image:url('icons/3d.jpg'); "> </div> <p> Animation </p> </div>  
 <div id="glass" class="prog" style="position:absolute; top:33.5%; left:2.5%;"> <div id="iconn" style="background-image:url('icons/c++.jpg'); "> </div> <p> Programming </p> </div>  
 <div id="glass" class="design" style="position:absolute; top:48.5%; left:2.5%;"> <div id="iconn" style="background-image:url('icons/photoshop.jpg'); border-radius:0px; "> </div> <p> Designing </p> </div>
@@ -379,7 +392,10 @@ Flash
  <a href="#" class="close">&#10006;</a>
 </div>
 <div class="con-wrap">
-
+<div class="content">
+Thursday, 23 Aug ( 5 pm )<br>
+Venue: Smart Classroom<br>
+"Animation can be used to inspire, educate, inform and entertain while showing the world in a way one did not perceive before". Flash is an ubiquitous, premier web animation tool that eclipses all other tools. It is the head of its class when it comes to using a tool to create interactive applications using minimal time. TECHWEEK brings a fun-filled, extremely intensive and practical workshop which aims to gift the ability to conceive, design and create the world around oneself!</div>
  <div class="foot">
  
  <b>DHRUV</b>
@@ -400,7 +416,10 @@ Animations
  <a href="#" class="close">&#10006;</a>
 </div>
 <div class="con-wrap">
-
+<div class="content">
+Saturday, 25 Aug ( 10 AM )<br>
+Venue:Edusat Hall<br>
+"Energy and Emotion" Imagination at its best. . Animation offers a medium of story-telling and visual entertainment which can bring pleasure and information to people of all ages everywhere in the world. Attend this fascinating workshop & instil life in your thoughts!! Also, find yourself being introduced to the fascinating world of 3D game development!</div> 
  <div class="foot">
  
  <b>DHRUV</b>
@@ -422,7 +441,12 @@ Programming
  <a href="#" class="close">&#10006;</a>
 </div>
 <div class="con-wrap">
-
+<div class="content">
+Friday, 24 Aug ( 4 pm )<br>
+Venue: Edusat Hall<br>
+"Controlling complexity is the essence of computer programming." 
+-Kernighan 
+This computer programming workshop basically gives a general idea of the basic concepts of C and C++. For newbies venturing into the fascinating world of coding as well as the self-made programmers, this workshop will help develop and enhance programming skills as concepts will be taught from scratch along with questions and puzzles.</div>
  <div class="foot">
  
  <b>DHRUV</b>
@@ -443,7 +467,10 @@ Design
  <a href="#" class="close">&#10006;</a>
 </div>
 <div class="con-wrap">
-
+<div class="content">Friday, 24 Aug ( 5 pm )<br>
+Venue: Smart Classroom<br>
+"Design can be art. Design can be aesthetics. Design is so simple, that's why it is so complicated." -Paul Rand, Graphic Designer 
+Specifically designed for everyone who is interested in the beautiful world of Graphic Designing. Get to know the nuances of making your own personal graphic studios, right from scratch; give a different dimensions to pictures and make posters that amaze everyone. An introduction to Adobe Photoshop, Illustrator, and InDesign!</div>
  <div class="foot">
  
  <b>DHRUV</b>
@@ -465,7 +492,10 @@ Autocad
  <a href="#" class="close">&#10006;</a>
 </div>
 <div class="con-wrap">
-
+<div class="content">
+Tuesday, 28 Aug ( 5 pm )<br>
+Venue: Edusat Hall<br>
+You now have the power to design ideas in almost any form you can imagine ! Design and shape the world around you with IEEE Techweek's workshop on AutoCAD. The powerful yet flexible AutoCAD software is one of the world's leading 2D and 3D CAD design tools. It is used in making automobile components, mechanical components, draw architectural designs, electrical controls designers etc. This workshop has the potential to maximize your productivity with tools for conceptual design, model documentation, and reality capture.</div>
  <div class="foot">
  
  <b>DHRUV</b>
@@ -486,7 +516,10 @@ Robotics
  <a href="#" class="close">&#10006;</a>
 </div>
 <div class="con-wrap">
-
+<div class="content">
+Saturday, 25 Aug ( 2 pm )<br>
+Venue: Edusat Hall<br>
+Our generation has grown up witnessing the Star Wars, fighting and rooting for the Terminators and ooh-aahing at the Wall-Es. If u were one of us who were awed by the Bat-Cycle(well if you have watched the Dark-Knight Rises, that is :P) and have that usual techie's dream to build a robot of his own that would walk, run, stop at the click of a button, then the Game begins here !! At IEEE Techweek witness the design, construction, operation and application of robots and robotic equipment. Encompassing the sciences of electronics, mechanics and software, the Robotics workshop has always been the jewel in Techweek's crown. Welcome here freaks !! Also find youself mesmerized by the fascinating world of Embedded Systems!</div>
  <div class="foot">
  
  <b>DHRUV</b>
@@ -507,7 +540,10 @@ Digital Image Processing
  <a href="#" class="close">&#10006;</a>
 </div>
 <div class="con-wrap">
-
+<div class="content">
+Wednesday, 29 Aug ( 5 pm )<br>
+Venue: Smart Classroom<br>
+The camera can photograph thought. ~ Dirk Bogarde Digital image processing is the use of computer algorithms to perform image processing on digital images e.g the process used in the perception of real life images by robots, line followers, etc. An essential tool in medical imaging, robotics, document analysis, tools and toys, recognizing scenes and fingerprinting, DIP coding and designing will be the core of the workshop. Use MATLAB or MATrix LABoratory, a powerful tool, to implement DIP. An introduction to the same shall be given!</div>
  <div class="foot">
  
  <b>DHRUV</b>
@@ -528,7 +564,10 @@ Web Development
  <a href="#" class="close">&#10006;</a>
 </div>
 <div class="con-wrap">
-
+<div class="content">
+Tuesday, 28 Aug ( 4 pm )<br>
+Venue: Smart Classroom<br>
+Do the design and working of websites fascinate you? If the answer is yes, then the WEB-D workshop at Techweek is the place to be. From HTML to PHP, from CSS to AJAX, this workshop shall teach you all and answer all your queries. Who knows, your websites could be all over the Internet in no time!</div>
  <div class="foot">
  
  <b>DHRUV</b>

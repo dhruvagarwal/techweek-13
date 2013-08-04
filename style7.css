@@ -1297,7 +1297,8 @@ border:solid 1px #102a3e;
 margin:30px auto;
 width: 34em;
 background: #fff;
-height: 24em;
+height: 21em;
+
 }
 .wcmd{
 float: right;
@@ -1356,12 +1357,7 @@ box-shadow: 0px 0px 11px 3px #f85032;
 .wcmd a:hover{
 cursor: pointer;
 }
-.foot{
-height: 57px;
-background: #f1f5fb;
-margin: 327px auto;
-box-shadow: inset 0px 4px 13px #CCD9EA;
-}
+
 .foot img{
 width: 52px;
 margin-left: 20px;
@@ -1424,3 +1420,72 @@ margin-right: 11em;}
 .dip{
 margin-bottom: 5em;
 margin-right: 11em;}
+
+#rename{
+  display: none;
+  z-index: -1;
+  
+}
+
+#event1 .foot{
+height: 57px;
+background: #f1f5fb;
+margin: 10.1em auto;
+box-shadow: inset 0px 4px 13px #CCD9EA;
+
+}
+#event2 .foot{
+height: 57px;
+background: #f1f5fb;
+margin: 12.5em auto;
+box-shadow: inset 0px 4px 13px #CCD9EA;
+
+}
+
+#event3 .foot{
+height: 57px;
+background: #f1f5fb;
+margin: 11.3em auto;
+box-shadow: inset 0px 4px 13px #CCD9EA;
+
+}
+
+#event4 .foot{
+height: 57px;
+background: #f1f5fb;
+margin: 11.3em auto;
+box-shadow: inset 0px 4px 13px #CCD9EA;
+
+}
+
+#event5 .foot{
+height: 57px;
+background: #f1f5fb;
+margin: 8.95em auto;
+box-shadow: inset 0px 4px 13px #CCD9EA;
+
+}
+
+#event6 .foot{
+height: 57px;
+background: #f1f5fb;
+margin: 6.55em auto;
+box-shadow: inset 0px 4px 13px #CCD9EA;
+
+}
+
+#event7 .foot{
+height: 57px;
+background: #f1f5fb;
+margin: 10.1em auto;
+box-shadow: inset 0px 4px 13px #CCD9EA;
+
+}
+
+#event8 .foot{
+height: 57px;
+background: #f1f5fb;
+margin: 13.7em auto;
+box-shadow: inset 0px 4px 13px #CCD9EA;
+
+}
