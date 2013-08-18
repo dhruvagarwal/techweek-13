@@ -10,17 +10,17 @@ $('#event8').hide();
 $('#aboutus').hide();
 $('#schedule').hide();
 $(function(){
-	$('.calget').draggable({containment:$('.calget').parent().parent().parent()});
-	$('.flash').draggable({containment:$('.flash').parent().parent().parent()});
-	$('.dip').draggable({containment:$('.dip').parent().parent().parent()});
-	$('.anim').draggable({containment:$('.anim').parent().parent().parent()});
-	$('.prog').draggable({containment:$('.prog').parent().parent().parent()});
-	$('.design').draggable({containment:$('.design').parent().parent().parent()});
-	$('.robo').draggable({containment:$('.robo').parent().parent().parent()});
-	$('.autocad').draggable({containment:$('.autocad').parent().parent().parent()});
-	$('.webd').draggable({containment:$('.webd').parent().parent().parent()});
+	$('.calget').draggable({containment:$('.calget').parent().parent().parent().parent()});
+	$('.flash').draggable({containment:$('.flash').parent().parent().parent().parent()});
+	$('.dip').draggable({containment:$('.dip').parent().parent().parent().parent()});
+	$('.anim').draggable({containment:$('.anim').parent().parent().parent().parent()});
+	$('.prog').draggable({containment:$('.prog').parent().parent().parent().parent()});
+	$('.design').draggable({containment:$('.design').parent().parent().parent().parent()});
+	$('.robo').draggable({containment:$('.robo').parent().parent().parent().parent()});
+	$('.autocad').draggable({containment:$('.autocad').parent().parent().parent().parent()});
+	$('.webd').draggable({containment:$('.webd').parent().parent().parent().parent()});
 
-	var h = screen.height + 'px';alert(h);
+	var h = screen.height + 'px';
 	$("body").css("height",h);
 	
 
@@ -49,7 +49,7 @@ $(document).ready(function(){
 		$('#tung_about').hide();
 		$('#schedule').hide();
 		$('#tung_schd').hide();
-		$('#event1').draggable({containment:$('#event1').parent().parent()});
+		$('#event1').draggable({containment:$('#event1').parent().parent().parent()});
 
 	});
 
@@ -74,7 +74,7 @@ $(document).ready(function(){
 		$('#tung_about').hide();
 		$('#schedule').hide();
 		$('#tung_schd').hide();
-		$('#event1').draggable({containment:$('#event1').parent().parent()});
+		$('#event1').draggable({containment:$('#event1').parent().parent().parent()});
 
 	});
 
@@ -99,7 +99,7 @@ $(document).ready(function(){
 		$('#tung_about').hide();
 		$('#schedule').hide();
 		$('#tung_schd').hide();
-		$('#event2').draggable({containment:$('#event2').parent().parent()});
+		$('#event2').draggable({containment:$('#event2').parent().parent().parent()});
 	});
 
 	$('.animmenu').click(function(){
@@ -123,7 +123,7 @@ $(document).ready(function(){
 		$('#tung_about').hide();
 		$('#schedule').hide();
 		$('#tung_schd').hide();
-		$('#event2').draggable({containment:$('#event2').parent().parent()});
+		$('#event2').draggable({containment:$('#event2').parent().parent().parent()});
 	});
 
 
@@ -148,7 +148,7 @@ $(document).ready(function(){
 		$('#tung_about').hide();
 		$('#schedule').hide();
 		$('#tung_schd').hide();
-		$('#event3').draggable({containment:$('#event3').parent().parent()});
+		$('#event3').draggable({containment:$('#event3').parent().parent().parent()});
 	});
 
 	$('.progmenu').click(function(){
@@ -172,7 +172,7 @@ $(document).ready(function(){
 		$('#aboutus').hide();
 		$('#schedule').hide();
 		$('#tung_schd').hide();
-		$('#event3').draggable({containment:$('#event3').parent().parent()});
+		$('#event3').draggable({containment:$('#event3').parent().parent().parent()});
 	});
 
 
@@ -197,7 +197,7 @@ $(document).ready(function(){
 		$('#tung_about').hide();
 		$('#schedule').hide();
 		$('#tung_schd').hide();
-		$('#event4').draggable({containment:$('#event4').parent().parent()});
+		$('#event4').draggable({containment:$('#event4').parent().parent().parent()});
 	});
 
 	$('.designmenu').click(function(){
@@ -221,7 +221,7 @@ $(document).ready(function(){
 		$('#tung_about').hide();
 		$('#schedule').hide();
 		$('#tung_schd').hide();
-		$('#event4').draggable({containment:$('#event4').parent().parent()});
+		$('#event4').draggable({containment:$('#event4').parent().parent().parent()});
 	});
 
 	$('.autocad').dblclick(function(){
@@ -245,7 +245,7 @@ $(document).ready(function(){
 		$('#tung_about').hide();
 		$('#schedule').hide();
 		$('#tung_schd').hide();
-		$('#event5').draggable({containment:$('#event5').parent().parent()});
+		$('#event5').draggable({containment:$('#event5').parent().parent().parent()});
 	});
 
 	$('.autocadmenu').click(function(){
@@ -269,7 +269,7 @@ $(document).ready(function(){
 		$('#tung_about').hide();
 		$('#schedule').hide();
 		$('#tung_schd').hide();
-		$('#event5').draggable({containment:$('#event5').parent().parent()});
+		$('#event5').draggable({containment:$('#event5').parent().parent().parent()});
 	});
 
 	$('.robo').dblclick(function(){
@@ -293,7 +293,7 @@ $(document).ready(function(){
 		$('#tung_about').hide();
 		$('#schedule').hide();
 		$('#tung_schd').hide();
-		$('#event6').draggable({containment:$('#event6').parent().parent()});
+		$('#event6').draggable({containment:$('#event6').parent().parent().parent()});
 	});
 
 	$('.robomenu').click(function(){
@@ -317,7 +317,7 @@ $(document).ready(function(){
 		$('#tung_about').hide();
 		$('#schedule').hide();
 		$('#tung_schd').hide();
-		$('#event6').draggable({containment:$('#event6').parent().parent()});
+		$('#event6').draggable({containment:$('#event6').parent().parent().parent()});
 	});
 
 
@@ -342,7 +342,7 @@ $(document).ready(function(){
 		$('#tung_about').hide();
 		$('#schedule').hide();
 		$('#tung_schd').hide();
-		$('#event7').draggable({containment:$('#event7').parent().parent()});
+		$('#event7').draggable({containment:$('#event7').parent().parent().parent()});
 	});
 
 	$('.dipmenu').click(function(){
@@ -366,7 +366,7 @@ $(document).ready(function(){
 		$('#tung_about').hide();
 		$('#schedule').hide();
 		$('#tung_schd').hide();
-		$('#event7').draggable({containment:$('#event7').parent().parent()});
+		$('#event7').draggable({containment:$('#event7').parent().parent().parent()});
 	});
 
 
@@ -391,7 +391,7 @@ $(document).ready(function(){
 		$('#tung_about').hide();
 		$('#schedule').hide();
 		$('#tung_schd').hide();
-		$('#event8').draggable({containment:$('#event8').parent().parent()});
+		$('#event8').draggable({containment:$('#event8').parent().parent().parent()});
 	});
 
 	$('.webdmenu').click(function(){
@@ -415,7 +415,7 @@ $(document).ready(function(){
 		$('#tung_about').hide();
 		$('#schedule').hide();
 		$('#tung_schd').hide();
-		$('#event8').draggable({containment:$('#event8').parent().parent()});
+		$('#event8').draggable({containment:$('#event8').parent().parent().parent()});
 	});
 	
 	
@@ -440,7 +440,7 @@ $(document).ready(function(){
 		$('#tung_about').show();
 		$('#schedule').hide();
 		$('#tung_schd').hide();
-		$('#aboutus').draggable({containment:$('#aboutus').parent().parent()});
+		$('#aboutus').draggable({containment:$('#aboutus').parent().parent().parent()});
 	});
 	
 	$('.schd').click(function(){
@@ -464,7 +464,7 @@ $(document).ready(function(){
 		$('#tung_about').hide();
 		$('#schedule').show();
 		$('#tung_schd').show();
-		$('#schedule').draggable({containment:$('#schedule').parent().parent()});
+		$('#schedule').draggable({containment:$('#schedule').parent().parent().parent()});
 	});
 
 
