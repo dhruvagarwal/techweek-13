@@ -1,5 +1,4 @@
 $('#event1').hide();
-alert('Press F11 for full experience !!');
 $('#event2').hide();
 $('#event3').hide();
 $('#event4').hide();
@@ -9,6 +8,7 @@ $('#event7').hide();
 $('#event8').hide();
 $('#aboutus').hide();
 $('#schedule').hide();
+$('#webteam').hide();
 $(function(){
 	$('.calget').draggable({containment:$('.calget').parent().parent().parent().parent()});
 	$('.flash').draggable({containment:$('.flash').parent().parent().parent().parent()});
@@ -41,6 +41,7 @@ $(document).ready(function(){
 		$('#tung5').hide();
 		$('#event6').hide();
 		$('#tung6').hide();
+		$('#webteam').hide();
 		$('#event7').hide();
 		$('#tung7').hide();
 		$('#event8').hide();
@@ -66,6 +67,7 @@ $(document).ready(function(){
 		$('#tung5').hide();
 		$('#event6').hide();
 		$('#tung6').hide();
+		$('#webteam').hide();
 		$('#event7').hide();
 		$('#tung7').hide();
 		$('#event8').hide();
@@ -91,6 +93,7 @@ $(document).ready(function(){
 		$('#tung5').hide();
 		$('#event6').hide();
 		$('#tung6').hide();
+		$('#webteam').hide();
 		$('#event7').hide();
 		$('#tung7').hide();
 		$('#event8').hide();
@@ -115,6 +118,7 @@ $(document).ready(function(){
 		$('#tung5').hide();
 		$('#event6').hide();
 		$('#tung6').hide();
+		$('#webteam').hide();
 		$('#event7').hide();
 		$('#tung7').hide();
 		$('#event8').hide();
@@ -144,6 +148,7 @@ $(document).ready(function(){
 		$('#tung7').hide();
 		$('#event8').hide();
 		$('#tung8').hide();
+		$('#webteam').hide();
 		$('#aboutus').hide();
 		$('#tung_about').hide();
 		$('#schedule').hide();
@@ -168,6 +173,7 @@ $(document).ready(function(){
 		$('#tung7').hide();
 		$('#event8').hide();
 		$('#tung8').hide();
+		$('#webteam').hide();
 		$('#tung_about').hide();
 		$('#aboutus').hide();
 		$('#schedule').hide();
@@ -193,6 +199,7 @@ $(document).ready(function(){
 		$('#tung7').hide();
 		$('#event8').hide();
 		$('#tung8').hide();
+		$('#webteam').hide();
 		$('#aboutus').hide();
 		$('#tung_about').hide();
 		$('#schedule').hide();
@@ -218,6 +225,7 @@ $(document).ready(function(){
 		$('#event8').hide();
 		$('#tung8').hide();
 		$('#aboutus').hide();
+		$('#webteam').hide();
 		$('#tung_about').hide();
 		$('#schedule').hide();
 		$('#tung_schd').hide();
@@ -242,6 +250,7 @@ $(document).ready(function(){
 		$('#event8').hide();
 		$('#tung8').hide();
 		$('#aboutus').hide();
+		$('#webteam').hide();
 		$('#tung_about').hide();
 		$('#schedule').hide();
 		$('#tung_schd').hide();
@@ -266,6 +275,7 @@ $(document).ready(function(){
 		$('#event8').hide();
 		$('#tung8').hide();
 		$('#aboutus').hide();
+		$('#webteam').hide();
 		$('#tung_about').hide();
 		$('#schedule').hide();
 		$('#tung_schd').hide();
@@ -290,6 +300,7 @@ $(document).ready(function(){
 		$('#event8').hide();
 		$('#tung8').hide();
 		$('#aboutus').hide();
+		$('#webteam').hide();
 		$('#tung_about').hide();
 		$('#schedule').hide();
 		$('#tung_schd').hide();
@@ -314,6 +325,7 @@ $(document).ready(function(){
 		$('#event8').hide();
 		$('#tung8').hide();
 		$('#aboutus').hide();
+		$('#webteam').hide();
 		$('#tung_about').hide();
 		$('#schedule').hide();
 		$('#tung_schd').hide();
@@ -339,6 +351,7 @@ $(document).ready(function(){
 		$('#event8').hide();
 		$('#tung8').hide();
 		$('#aboutus').hide();
+		$('#webteam').hide();
 		$('#tung_about').hide();
 		$('#schedule').hide();
 		$('#tung_schd').hide();
@@ -363,6 +376,7 @@ $(document).ready(function(){
 		$('#event8').hide();
 		$('#tung8').hide();
 		$('#aboutus').hide();
+		$('#webteam').hide();
 		$('#tung_about').hide();
 		$('#schedule').hide();
 		$('#tung_schd').hide();
@@ -388,6 +402,7 @@ $(document).ready(function(){
 		$('#event8').show();
 		$('#tung8').show();
 		$('#aboutus').hide();
+		$('#webteam').hide();
 		$('#tung_about').hide();
 		$('#schedule').hide();
 		$('#tung_schd').hide();
@@ -412,6 +427,7 @@ $(document).ready(function(){
 		$('#event8').show();
 		$('#tung8').show();
 		$('#aboutus').hide();
+		$('#webteam').hide();
 		$('#tung_about').hide();
 		$('#schedule').hide();
 		$('#tung_schd').hide();
@@ -437,10 +453,36 @@ $(document).ready(function(){
 		$('#event8').hide();
 		$('#tung8').hide();
 		$('#aboutus').show();
+		$('#webteam').hide();
 		$('#tung_about').show();
 		$('#schedule').hide();
 		$('#tung_schd').hide();
 		$('#aboutus').draggable({containment:$('#aboutus').parent().parent().parent()});
+	});
+	
+	$('.webteam').click(function(){
+		$('#event1').hide();
+		$('#tung1').hide();
+		$('#event2').hide();
+		$('#tung2').hide();
+		$('#event3').hide();
+		$('#tung3').hide();
+		$('#event4').hide();
+		$('#tung4').hide();
+		$('#event5').hide();
+		$('#tung5').hide();
+		$('#event6').hide();
+		$('#tung6').hide();
+		$('#event7').hide();
+		$('#tung7').hide();
+		$('#event8').hide();
+		$('#tung8').hide();
+		$('#aboutus').hide();
+		$('#tung_about').hide();
+		$('#webteam').show();
+		$('#schedule').hide();
+		$('#tung_schd').hide();
+		$('#webteam').draggable({containment:$('#webteam').parent().parent().parent()});
 	});
 	
 	$('.schd').click(function(){
@@ -461,6 +503,7 @@ $(document).ready(function(){
 		$('#event8').hide();
 		$('#tung8').hide();
 		$('#aboutus').hide();
+		$('#webteam').hide();
 		$('#tung_about').hide();
 		$('#schedule').show();
 		$('#tung_schd').show();

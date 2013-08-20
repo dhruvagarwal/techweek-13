@@ -1,6 +1,13 @@
 
 #jpreOverlay {
-  background-color: #000000;
+  /*background-color: #000000;*/
+  background:-webkit-radial-gradient(bottom,circle,#EED2EE,#5C246E);
+  background:-moz-radial-gradient(bottom,circle,#EED2EE,#5C246E);
+  background:-ms-radial-gradient(bottom,circle,#EED2EE,#5C246E);
+  background:-o-radial-gradient(bottom,circle,#EED2EE,#5C246E);
+  background:radial-gradient(bottom,circle,#EED2EE,#5C246E);
+  filter: progid:DXImageTransform.Microsoft.Gradient(startColorStr='#EED2EE', endColorStr='#5C246E', GradientType=0);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Gradient(startColorStr='#EED2EE', endColorStr='#5C246E', GradientType=0)";
 }
 #jpreSlide{
 	font-size:22px;
